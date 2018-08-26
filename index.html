@@ -3,35 +3,40 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="page page--not-logged">
   <header>
     <div class="container">
-      <h1 class="visually-hidden">HTML Academy: Девайс
+      <h1 class="font-none">HTML Academy: Девайс
         <a>
-          <img src="http://placehold.it/150x100" alt="Логотип магазина DEVICE">
+          <img src="img/svg-device/logo.svg" alt="Логотип магазина DEVICE">
         </a>
       </h1>
-      <img src="http://placehold.it/150x100" alt="Логотип магазина DEVICE">
+
       <nav class="main-header__nav"> 
         <div class="main-header__row">
           <form class="search main-header__column">
+          	<img src="img/svg-device/search.svg" alt="Поиск по сайту">
             <input type="search" placeholder="Поиск по сайту" id="search_item" name="search" class="search__input">
             <button type="submit" class="search__button">Найти</button>
           </form>
           <ul class="main-header__user-list main-header__column">
             <li class="main-header__user-item main-header__user-item--login">
               <a class="icon-link main-header__link user-is-logged-out" href="#">
+				<img src="img/svg-device/user.svg" alt="Войти">
                 Войти
               </a>
             </li>
             <li class="user-is-logged-in main-header__user-item">
-              <a href="#">
+              <a class="icon-link main-header__link user-is-logged-out" href="#">
+              	<img src="img/svg-device/compare.svg" alt="Сравнить">
                 Сравнить
               </a>
             </li>
             <li class="user-is-logged-in main-header__user-item">
               <a href="#">
+              	<img src="img/svg-device/cart.svg" alt="Корзина">
                 Корзина
               </a>
             </li>
@@ -40,7 +45,7 @@
         <div class="main-header__row main-header__row-relative">
           <ul class="main-header__main-list main-header__column">
             <li class="main-header__main-item">
-              <a href="#" class="catalog-opener">Каталог товаров</a>
+              <a href="#" class="catalog-opener">Каталог товаров <img src="img/svg-device/plus.svg" alt="Открытие каталога товаров"> </a>
               <div class="catalog-list">
                 <ul class="catalog-list__category">
                   <li class="catalog-list__item">
@@ -89,7 +94,7 @@
       <h2 class="visually-hidden">Избранные товары</h2>
       <div class="hero slider__slide slider__slide--active">
         <div class="hero__block hero__block--image">
-          <img src="http://placehold.it/150x100" alt="Невероятно длинная селфи-палка">
+        <img src="img/cont/slide_1.png" alt="Невероятно длинная селфи-палка" width="384" height="486">          
         </div>
         <div class="hero__block hero__block--description">
           <p class="maintitle hero__title decoline decoline--white-long">
@@ -121,7 +126,7 @@
         <h3 class="visually-hidden">Фитнес-браслет
         </h3>
         <div class="hero__block hero__block--image">
-          <img src="http://placehold.it/150x100" alt="Фитнес-браслет">
+		<img src="img/cont/slide_2.png" alt="Фитнес-браслет" width="345" height="485">
         </div>
         <section class="hero__block hero__block--description">
           <h4 class="main-title hero__title decoline decoline--white-long">Худеем
@@ -144,8 +149,8 @@
       <article class="hero slider__slide">
         <h3 class="visually-hidden">Жалящий квадрокоптер
         </h3>
-          <div class="hero__block--image hero__block--image">
-            <img src="http://placehold.it/150x100" alt="Жалящий квадрокоптер">
+          <div class="hero__block--image hero__block--image"> 
+			<img src="img/cont/slide_3.png" alt="Жалящий квадрокоптер" width="526" height="334">
           </div>
         <section class="hero__block--image hero__block--description">
           <h4 class="main-title hero__title-title decoline decoline--white-long">Порхает как бабочка,
@@ -185,27 +190,27 @@
     <section class="device-types container">
       <h2 class="visually-hidden">Категории устройств</h2>      
       <a href="#" class="device-types__link">
-        <!-- здесь будет векторное изображение -->
+        <img src="img/svg-device/popular-1.svg" alt="Виртуальная реальность" width="160" height="160">
         <p class="devicetypes-para">Виртуальная реальность</p>
       </a>
       <a href="catalog.html" class="device-types__link">
-        <!-- здесь будет векторное изображение -->
+		<img src="img/svg-device/popular-2.svg" alt="Моноподы для селфи" width="160" height="160">
         <p class="devicetypes-para">Моноподы для селфи</p>
       </a>
       <a href="#" class="device-types__link">
-        <!-- здесь будет векторное изображение -->
+       	<img src="img/svg-device/popular-3.svg" alt="Экшн-камеры" width="160" height="160">
         <p class="devicetypes-para">Экшн-камеры</p>
       </a>
       <a href="#" class="device-types__link">
-        <!-- здесь будет векторное изображение -->
+        <img src="img/svg-device/popular-4.svg" alt="Фитнес-браслеты" width="160" height="160">
         <p class="devicetypes-para">Фитнес-браслеты</p>
       </a>
       <a href="#" class="device-types__link">
-        <!-- здесь будет векторное изображение -->
+        <img src="img/svg-device/popular-5.svg" alt="Умные часы" width="160" height="160">
         <p class="devicetypes-para">Умные часы</p>
       </a>
       <a href="#" class="device-types__link">
-        <!-- здесь будет векторное изображение -->
+        <img src="img/svg-device/popular-6.svg" alt="Квадрокоптеры" width="160" height="160">
         <p class="devicetypes-para">Квадрокоптеры</p>
       </a>
     </section>
@@ -231,6 +236,7 @@
                 <p
                 class="main-para advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
+                <img src="img/svg-device/delivery.svg" alt="Доставка">
               </div>
             </div>
           </section>
@@ -258,25 +264,35 @@
       </section>
     </div>
     <div class="partners container">
+      <h2 class="font-none">Наши партнеры</h2>
       <ul class="partners__list">
         <li class="partners__item">
           <a class="partners__link partners__link-dji" href="#">
-            <img class="partners__image" src="http://placehold.it/150x100" alt="Квадрокоптеры DJI">
+            <img class="partners__image" src="img/cont/logotip_dji.svg" alt="Квадрокоптеры DJI" width="260" height="100">
           </a>
         </li>
         <li class="partners__item">
           <a class="partners__link partners__link--sp" href="#">
-            <img class="partners__image" src="http://placehold.it/150x100" alt="Штативы для селфи SP Gadgets">
+            
+
+
+             <img class="partners__image" src="img/cont/logo-spgadgets.jpg" alt="Штативы для селфи SP Gadgets"
+              width="260" height="100">
           </a>
         </li>
         <li class="partners__item">
           <a class="partners__link partners__link--gopro" href="#">
-            <img class="partners__image" src="http://placehold.it/150x100" alt="Экшн-камеры GoPro">
+          
+
+            <img class="partners__image" src="img/cont/logo-gopro.jpg" alt="Экшн-камеры GoPro" width="260"
+              height="100">
           </a>
         </li>
         <li class="partners__item">
           <a class="partners__link partners__link--vive" href="#">
-            <img class="partners__image" src="http://placehold.it/150x100" alt="Системы виртуальной реальности Vive">
+           
+
+            <img class="partners__image" src="img/cont/logo-vive.svg" alt="Системы виртуальной реальности Vive" width="260" height="100">
           </a>
         </li>
       </ul>
@@ -293,21 +309,25 @@
       </div>
       <ul class="custom-list-white-circles brief-info__list">
         <li class="custom-list-white-circles-item">
+          <img src="img/svg-device/slider-button-1.svg" alt="о">	
           Деловые Линии
         </li>
         <li class="custom-list-white-circles-item">
+          <img src="img/svg-device/slider-button.svg" alt="о">
           Автотрейдинг
         </li>
         <li class="custom-list-white-circles-item">
+          <img src="img/svg-device/slider-button.svg" alt="о">
           ЖелДорЭкспедиция
         </li>
       </ul>
     </div>
     </div> 
     <div class="brief-info__block">
-      <h3 class="main-title brief-info__main-title decoline decoline--black">Контакты</h3>
+      <h2 class="main-title brief-info__main-title decoline decoline--black">Контакты</h2>
       <p class="main-para brief-info__para">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       </p>
+      <img src="img/cont/map.jpg" alt="Карта">
     </div>
     <div class="brief-info__buttons">
       <div class="brief-info__buttons-part">
@@ -325,20 +345,23 @@
   <footer class="main-footer">
     <div class="container">
       <div class="main-footer__logo-and-user main-footer__row">
-        <img src="http://placehold.it/150x100" alt="Логотип магазина DEVICE">
+        <img src="img/svg-device/logo.svg" alt="Логотип магазина DEVICE">
           <ul class="main-header__user-list main-header__column">
             <li class="main-header__user-item main-header__user-item--login">
               <a class="icon-link main-header__link user-is-logged-out" href="#">
+              	<img src="img/svg-device/user.svg" alt="Войти">
                 Войти
               </a>
              </li>
             <li class="user-is-logged-in main-header__user-item">
               <a href="#">
+              	<img src="img/svg-device/compare.svg" alt="Сравнить">
                 Сравнить
               </a>
             </li>
             <li class="user-is-logged-in main-header__user-item">
               <a href="#">
+              	<img src="img/svg-device/cart.svg" alt="Корзина">
                 Корзина
               </a>
             </li>
@@ -359,7 +382,7 @@
         </ul>
         <div class="main-footer__column main-footer__column--short">
           <p class="main-footer__text main-footer__phone">Тел.:
-            <a href="tel:+74954959595">+7(495)495-95-95</a>
+            <a href="tel:+74954959595">+7 (495) 495-95-95</a>
           </p>
         </div>
       </div>
@@ -367,22 +390,26 @@
         <ul class="socials socials--footer decoline decoline--footer decoline--orange main-footer__column main-footer__column--long">
           <li class="socials-item">
             <a href="#" class="socials__fb">
+              <img src="img/svg-device/fb.svg" alt="Фейсбук">	
               Фейсбук
             </a>
           </li>
           <li class="socials-item">
             <a href="#" class="socials__inst">
+              <img src="img/svg-device/instagram.svg" alt="Инстаграм">
               Инстаграм
             </a>
           </li>
           <li class="socials-item">
             <a href="#" class="socials__twit">
+              <img src="img/svg-device/twitter.svg" alt="Твиттер">
               Твиттер
             </a>
           </li>
         </ul>
         <div class="academy-logo academy-logo--footer">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
+          	<img src="img/svg-device/logo-html.svg" alt="HTML Academy">
             HTML Academy
           </a>
         </div>

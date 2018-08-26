@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс - Моноподы для селфи</title>
+  <link href="css/styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="page page--not-logged">
   <header>
     <div class="container">
-      <h1 class="visually-hidden"> HTML Academy: Девайс - Моноподы для селфи
+      <h1 class="main-title font-none">Моноподы для селфи
         <a href="index.html">
-          <img src="http://placehold.it/150x100" alt="Логотип магазина DEVICE">
+          <img src="img/svg-device/logo.svg" alt="Логотип магазина DEVICE">
         </a>
       </h1>
       <nav class="main-header__nav">
@@ -20,22 +21,29 @@
           </form>         
         <ul class="main-header__user-list main-header__column">
           <li class="user-is-logged-in main-header__user-item">
+
+
+
             <a href="#">
+              <img src="img/svg-device/user.svg" alt="Валентин Петухов">
               Валентин Петухов
             </a>
           </li>
           <li class="main-header__user-item main-header__user-item--login">
             <a class="icon-link main-header__link user-is-logged-in" href="#">
+
               Выйти
             </a>
           </li>
           <li class="user-is-logged-in main-header__user-item">
             <a href="#">
+              <img src="img/svg-device/compare.svg" alt="Сравнить">
               Сравнить
             </a>
           </li>
           <li class="user-is-logged-in main-header__user-item">
             <a href="#">
+              <img src="img/svg-device/cart.svg" alt="Корзина">
               Корзина
             </a>
           </li>
@@ -89,14 +97,14 @@
     </div>
   </header> 
   <main>
-    <h2 class="main-title">Моноподы для селфи</h2>
+    <h1 class="main-title">Моноподы для селфи</h1>
     <div class="container crumbs">
       <ul class="crumbs__list">
         <li class="crumbs-item">
-          <a href="index.html">Главная</a>
+          <a href="index.html">Главная</a> <img src="img/svg-device/nav-arrow.svg" alt=">">
         </li>
         <li class="crumbs-item">
-          <a href="#">Каталог товаров</a>
+          <a href="#">Каталог товаров</a> <img src="img/svg-device/nav-arrow.svg" alt=">">
         </li>
         <li class="crumbs-item">
           <a>Моноподы для селфи</a>
@@ -107,7 +115,7 @@
       <div class="container">
         <div class="upper-shop-line__inner">
           <section class="sorting">
-            <h3 class="secondary-title">Сортировка:</h3>
+            <h2 class="secondary-title">Сортировка:</h2>
             <ul class="sorting__list">
               <li class="sorting__item sorting__item--active">
                 <a href="#">По цене</a>
@@ -122,11 +130,13 @@
             <ul class="sorting__triangles">
               <li class="sorting__item sorting__item--triangle">
                 <a class="sorting__asc visually-hidden" href="#">
+                  <img src="img/svg-device/icon-up-dir.svg" alt="По возрастанию">
                   По возрастанию
                 </a>
               </li>
               <li class="sorting__item sorting__item--active sorting__item--triangle">
                 <a class="sorting__desc visually-hidden" href="#">
+                  <img src="img/svg-device/icon-down-dir.svg" alt="По убыванию">
                   По убыванию
                 </a>
               </li>
@@ -138,7 +148,7 @@
     <div class="bg-gradient-whitegray">
       <div class="container flexit">
         <form action="#" method="get" class="filter">
-          <h3 class="secondary-title upper-shop-line__pseudo-title">Фильтр:</h3>
+          <h2 class="secondary-title upper-shop-line__pseudo-title">Фильтр:</h2>
           <fieldset class="filter__field">
             <legend class="filter__legend">Стоимость</legend>
             <div class="filter__range">
@@ -165,8 +175,10 @@
           </fieldset>
           <fieldset class="filter__field filter__field--bottom">
             <legend class="filter__legend">Bluetooth</legend>
+            <img src="img/svg-device/radio-on.svg" alt="*">
             <input type="radio" name="bluetooth" value="1" id="bluetooth-1" class="filter__input visually-hidden">
             <label for="bluetooth-1" class="filter__label filter__label--radio">Есть</label>
+            <img src="img/svg-device/radio-off.svg" alt="о">
             <input type="radio" name="bluetooth" value="0" id="bluetooth-0" class="filter__input visually-hidden">
             <label for="bluetooth-0" class="filter__label filter__label--radio">Нет</label>
           </fieldset>
@@ -176,7 +188,7 @@
           <div class="shop-inner">
             <article class="product-card">
               <div class="product-card__inner">
-                <img src="http://placehold.it/150x100" alt="Любительская селфи-палка" class="product-card__image">
+                <img src="img/cont/item-1.jpg" alt="Любительская селфи-палка" class="product-card__image">
                 <p class="product-card__links">
                   <a href="#" class="product-card__link btn">В корзину</a>
                   <a href="#" class="product-card__link product-card__link--add">Добавить к сравнению</a>
@@ -184,7 +196,9 @@
               </div>
               <div class="product-card__info">
                 <h3>
-                  <a class="product-card__name" href="#">Любительская селфи-палка
+                  <a class="product-card__name" href="#">
+
+                    Любительская селфи-палка
                   </a>
                 </h3>
                 <span class="product-card__price">500 руб.</span>
@@ -192,7 +206,7 @@
             </article>
             <article class="product-card">
               <div class="product-card__inner">
-                <img src="http://placehold.it/150x100" alt="Профессиональная селфи-палка"  class="product-card__image">
+                <img src="img/cont/item-2.jpg" alt="Профессиональная селфи-палка" class="product-card__image">
                 <p class="product-card__links">
                   <a href="#" class="product-card__link btn">В корзину</a>
                   <a href="#" class="product-card__link product-card__link--add">Добавить к сравнению</a>
@@ -208,7 +222,7 @@
             </article>
             <article class="product-card">
               <div class="product-card__inner">
-                <img src="http://placehold.it/150x100" alt="Непотопляемая селфи-палка"  class="product-card__image">
+                <img src="img/cont/item-3.jpg" alt="Профессиональная селфи-палка" class="product-card__image">
                 <p class="product-card__links">
                   <a href="#" class="product-card__link btn">В корзину</a>
                   <a href="#" class="product-card__link product-card__link--add">Добавить к сравнению</a>
@@ -225,8 +239,7 @@
             <article class="product-card product-card--new">
               <h3 class="visually-hidden">Селфи-палка «Следуй за мной»</h3>
               <div class="product-card__inner product-card__inner--new">
-                <img src="http://placehold.it/150x100" alt="Селфи-палка «Следуй за мной»" 
-                class="product-card__image product-card__image--new">
+                <img src="img/cont/item-4.jpg" alt="Селфи-палка «Следуй за мной»" class="product-card__image product-card__image--new">
                 <p class="product-card__links">
                   <a href="#" class="product-card__link btn">В корзину</a>
                   <a href="#" class="product-card__link product-card__link--add">Добавить к сравнению</a>
@@ -267,10 +280,11 @@
   <footer class="main-footer">
     <div class="container">
       <div class="main-footer__logo-and-user main-footer__row">
-        <img src="http://placehold.it/150x100" alt="Логотип магазина DEVICE">
+        <img src="img/svg-device/logo.svg" alt="Логотип магазина DEVICE">
         <ul class="main-header__user-list main-header__column">
           <li class="user-is-logged-in main-header__user-item">
             <a href="#">
+              <img src="img/svg-device/user.svg" alt="Валентин Петухов">
               Валентин Петухов
             </a>
           </li>
@@ -281,11 +295,13 @@
           </li>
           <li class="user-is-logged-in main-header__user-item">
             <a href="#">
+              <img src="img/svg-device/compare.svg" alt="Сравнить">
               Сравнить
             </a>
           </li>
           <li class="user-is-logged-in main-header__user-item">
             <a href="#">
+              <img src="img/svg-device/cart.svg" alt="Корзина">
               Корзина
             </a>
           </li>
@@ -306,7 +322,7 @@
         </ul>
         <div class="main-footer__column main-footer__column--short">
           <p class="main-footer__text main-footer__phone">Тел.:
-            <a href="tel:+74954959595">+7(495)495-95-95</a>
+            <a href="tel:+74954959595">+7 (495) 495-95-95</a>
           </p>
         </div>
       </div>
@@ -314,22 +330,26 @@
         <ul class="socials socials--footer decoline decoline--footer decoline--orange main-footer__column main-footer__column--long">
           <li class="socials-item">
             <a href="#" class="socials__fb">
+              <img src="img/svg-device/fb.svg" alt="Фейсбук"> 
               Фейсбук
             </a>
           </li>
           <li class="socials-item">
             <a href="#" class="socials__inst">
+              <img src="img/svg-device/instagram.svg" alt="Инстаграм">
               Инстаграм
             </a>
           </li>
           <li class="socials-item">
             <a href="#" class="socials__twit">
+              <img src="img/svg-device/twitter.svg" alt="Твиттер">
               Твиттер
             </a>
           </li>
         </ul>
         <div class="academy-logo academy-logo--footer">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img/svg-device/logo-html.svg" alt="HTML Academy">
             HTML Academy
           </a>
         </div>
