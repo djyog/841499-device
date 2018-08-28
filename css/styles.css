@@ -1,3 +1,11 @@
+li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   ul {
+    margin-left: 25; /* Отступ слева в браузере IE и Opera */
+    padding-left: 25; /* Отступ слева в браузере Firefox, Safari, Chrome */
+   }
+
 .font-none {
   font-size: 0;
 }
