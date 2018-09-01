@@ -10,33 +10,32 @@
     <div class="container">
       <h1 class="font-none">HTML Academy: Девайс
         <a>
-          <img src="img/svg/logo.svg" alt="Логотип магазина DEVICE">
+          <img src="img/svg/logo.svg" alt="DEVICE">
         </a>
       </h1>
-
       <nav class="main-header__nav"> 
         <div class="main-header__row">
           <form class="search main-header__column">
-          	<!-- <img src="img/svg/search.svg" alt="Поиск по сайту"> -->
             <input type="search" placeholder="Поиск по сайту" id="search_item" name="search" class="search__input">
-            <button type="submit" class="search__button">Найти</button>
+            <label for="search_item" class="visually-hidden">Поиск по сайту
+            </label>
+            <button type="submit" class="search__button">
+              Найти
+            </button>
           </form>
           <ul class="main-header__user-list main-header__column">
             <li class="main-header__user-item main-header__user-item--login">
               <a class="icon-link main-header__link user-is-logged-out" href="#">
-				<!-- img src="img/svg/user.svg" -->
                 Войти
               </a>
             </li>
             <li class="user-is-logged-in main-header__user-item">
               <a class="icon-link main-header__link user-is-logged-out" href="#">
-              	<!-- img src="img/svg/compare.svg" -->
                 Сравнить
               </a>
             </li>
             <li class="user-is-logged-in main-header__user-item">
               <a href="#">
-              	<!-- img src="img/svg/cart.svg" -->
                 Корзина
               </a>
             </li>
@@ -44,9 +43,9 @@
         </div>
         <div class="main-header__row main-header__row-relative">
           <ul class="main-header__main-list main-header__column">
-            <li class="main-header__main-item">
-              <a href="#" class="catalog-opener">Каталог товаров 
-              	<!-- <img src="img/svg/plus.svg" alt="Открытие каталога товаров"> -->
+            <li>
+              <a href="#" class="main-header__main-item catalog-opener">
+                Каталог товаров 
               </a>
               <div class="catalog-list">
                 <ul class="catalog-list__category">
@@ -54,7 +53,9 @@
                     <a href="#">Виртуальная реальность</a>
                   </li>
                   <li class="catalog-list__item">
-                    <a href="catalog.html">Моноподы для селфи</a>
+                    <a href="catalog.html">
+                      Моноподы для селфи
+                    </a>
                   </li>
                   <li class="catalog-list__item">
                     <a href="#">Экшн-камеры</a>
@@ -77,14 +78,14 @@
             </li>
           </ul>
           <ul class="main-header__main-list main-header__column">
-            <li class="main-header__main-item">
-              <a href="#">Доставка</a>
+            <li>
+              <a href="#" class="main-header__main-item">Доставка</a>
             </li>
-            <li class="main-header__main-item">
-              <a href="#">Гарантия</a>
+            <li>
+              <a href="#" class="main-header__main-item">Гарантия</a>
             </li>
-            <li class="main-header__main-item">
-              <a href="#">Контакты</a>
+            <li>
+              <a href="#" class="main-header__main-item">Контакты</a>
             </li>
           </ul>
         </div>
@@ -99,8 +100,9 @@
         <img src="img/cont/slide_1.png" alt="Невероятно длинная селфи-палка" width="384" height="486">          
         </div>
         <div class="hero__block hero__block--description">
-          <p class="maintitle hero__title decoline decoline--white-long">
-            Делай селфи, как Бен Стиллер!
+          <p class="main-title hero__title decoline decoline--white-long">
+            Делай селфи,<br> 
+            как Бен Стиллер!
           </p>
           <p class="main-para hero_para">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
@@ -128,12 +130,10 @@
         <h3 class="visually-hidden">Фитнес-браслет
         </h3>
         <div class="hero__block hero__block--image">
-		<img src="img/cont/slide_2.png" alt="Фитнес-браслет" width="345" height="485">
+		      <img src="img/cont/slide_2.png" alt="Фитнес-браслет" width="345" height="485">
         </div>
         <section class="hero__block hero__block--description">
-          <h4 class="main-title hero__title decoline decoline--white-long">Худеем
-            <br>
-            правильно!
+          <h4 class="main-title hero__title decoline decoline--white-long">Худеем <br> правильно!
           </h4>
           <p class="main-para hero__para">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
@@ -178,41 +178,35 @@
         </section>
       </article>
       <div class="slider__buttons hero__slider-buttons">
-        <button type="button" class="hero__slider-button hero__slider-button--active">
-          <span class="visually-hidden">1</span>
+        <button type="button" class="visually-hidden hero__slider-button hero__slider-button--active" name="tovar1" value="1">
+          1
         </button>
-        <button type="button" class="hero__slider-button">
-          <span class="visually-hidden">2</span>
+        <button type="button" class="visually-hidden hero__slider-button" name="tovar2" value="2">
+          2
         </button>
-        <button type="button" class="hero__slider-button">
-          <span class="visually-hidden">3</span>
+        <button type="button" class="visually-hidden hero__slider-button" name="tovar3" value="3">
+          3
         </button>
       </div>
     </section>
     <section class="device-types container">
       <h2 class="visually-hidden">Категории устройств</h2>      
       <a href="#" class="device-types__link">
-        <!-- img src="img/svg/popular-1.svg" alt="Виртуальная реальность" width="160" height="160" -->
         <p class="devicetypes-para">Виртуальная реальность</p>
       </a>
       <a href="catalog.html" class="device-types__link">
-		<!-- img src="img/svg/popular-2.svg" alt="Моноподы для селфи" width="160" height="160" -->
         <p class="devicetypes-para">Моноподы для селфи</p>
       </a>
       <a href="#" class="device-types__link">
-       	<!-- img src="img/svg/popular-3.svg" alt="Экшн-камеры" width="160" height="160"-->
         <p class="devicetypes-para">Экшн-камеры</p>
       </a>
       <a href="#" class="device-types__link">
-        <!-- img src="img/svg/popular-4.svg" alt="Фитнес-браслеты" width="160" height="160" -->
         <p class="devicetypes-para">Фитнес-браслеты</p>
       </a>
       <a href="#" class="device-types__link">
-        <!-- img src="img/svg/popular-5.svg" alt="Умные часы" width="160" height="160" -->
         <p class="devicetypes-para">Умные часы</p>
       </a>
       <a href="#" class="device-types__link">
-        <!-- img src="img/svg/popular-6.svg" alt="Квадрокоптеры" width="160" height="160" -->
         <p class="devicetypes-para">Квадрокоптеры</p>
       </a>
     </section>
@@ -238,7 +232,6 @@
                 <p
                 class="main-para advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
-                <!-- <img src="img/svg/delivery.svg" alt="Доставка"> -->
               </div>
             </div>
           </section>
@@ -266,26 +259,22 @@
       </section>
     </div>
     <div class="partners container">
-      <h2 class="font-none">Наши партнеры</h2>
+      <h2 class="visually-hidden">Бренды наших товаров</h2>
       <ul class="partners__list font-none">
         <li class="partners__item">
           <a class="partners__link partners__link-dji" href="#">
-            <!-- <img class="partners__image" src="img/cont/logotip_dji.svg" alt="Квадрокоптеры DJI" width="260" height="100"> -->
           </a>
         </li>
         <li class="partners__item">
           <a class="partners__link partners__link--sp" href="#">
-             <!-- <img class="partners__image" src="img/cont/logo-spgadgets.jpg" alt="Штативы для селфи SP Gadgets" width="260" height="100"> -->
           </a>
         </li>
         <li class="partners__item">
          	<a class="partners__link partners__link--gopro" href="#">
-            <!-- <img class="partners__image" src="img/cont/logo-gopro.jpg" alt="Экшн-камеры GoPro" width="260" height="100"> -->
           </a>
         </li>
         <li class="partners__item">
           <a class="partners__link partners__link--vive" href="#">
-            <!-- <img class="partners__image" src="img/cont/logo-vive.svg" alt="Системы виртуальной реальности Vive" width="260" height="100"> -->
           </a>
         </li>
       </ul>
@@ -302,15 +291,12 @@
       </div>
       <ul class="custom-list-white-circles brief-info__list">
         <li class="custom-list-white-circles-item">
-          <!-- <img src="img/svg/slider-button-1.svg" alt="о"> -->
           Деловые Линии
         </li>
         <li class="custom-list-white-circles-item">
-          <!-- <img src="img/svg/slider-button.svg" alt="о"> -->
           Автотрейдинг
         </li>
         <li class="custom-list-white-circles-item">
-          <!-- <img src="img/svg/slider-button.svg" alt="о"> -->
           ЖелДорЭкспедиция
         </li>
       </ul>
@@ -342,19 +328,16 @@
           <ul class="main-header__user-list main-header__column">
             <li class="main-header__user-item main-header__user-item--login">
               <a class="icon-link main-header__link user-is-logged-out" href="#">
-              	<!-- <img src="img/svg/user.svg" alt="Войти"> -->
                 Войти
               </a>
              </li>
             <li class="user-is-logged-in main-header__user-item">
               <a href="#">
-              	<!-- <img src="img/svg/compare.svg" alt="Сравнить"> -->
                 Сравнить
               </a>
             </li>
             <li class="user-is-logged-in main-header__user-item">
               <a href="#">
-              	<!-- <img src="img/svg/cart.svg" alt="Корзина"> -->
                 Корзина
               </a>
             </li>
@@ -384,19 +367,16 @@
           <li class="socials-item">
             <a href="#" class="socials__fb">
               <img src="img/svg/fb.svg" alt="Фейсбук">	
-              Фейсбук
             </a>
           </li>
           <li class="socials-item">
             <a href="#" class="socials__inst">
               <img src="img/svg/instagram.svg" alt="Инстаграм">
-              Инстаграм
             </a>
           </li>
           <li class="socials-item">
             <a href="#" class="socials__twit">
               <img src="img/svg/twitter.svg" alt="Твиттер">
-              Твиттер
             </a>
           </li>
         </ul>
@@ -409,33 +389,29 @@
       </div>
     </div>
   </footer>
-
   <div class="popup-map hidden">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.482165223512!2d37.52813139297608!3d55.687642925012305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504602285796"
       width="960" height="565">
+      Карта
     </iframe>
     <button type="button" class="modal-close-btn modal-close-btn--map">
-      <span class="visually-hidden">Скрыть</span>
+      Скрыть
     </button>
   </div>
-
   <form action="post" class="popup-form hidden">
     <fieldset class="popup-form__field">
       <legend class="visually-hidden">Форма обратной связи</legend>
-
       <div class="popup-form__part">
         <div class="popup-form__input-container">
           <label for="username">Ваше имя:</label>
           <input type="text" class="custom-input" name="username" id="username" placeholder="Представьтесь, пожалуйста">
         </div>
-
         <div class="popup-form__input-container">
           <label for="user_email">Ваш e-mail:</label>
           <input type="email" class="custom-input" name="user_email" id="user_email" placeholder="Для отправки ответа" required>
         </div>
       </div>
-
       <div class="popup-form__part popup-form__part--for-mail">
         <div class="popup-form__input-container popup-form__input-container--for-textarea">
           <label for="user_mailtext">Текст письма:</label>
@@ -446,14 +422,11 @@
           <button type="submit" class="btn">Отправить</button>
         </div>
       </div>
-
     </fieldset>
-    <button type="button" class="modal-close-btn modal-close-btn--write-us">
-      <span class="visually-hidden">Скрыть</span>
+    <button type="button" class="visually-hidden modal-close-btn modal-close-btn--write-us">
+      Скрыть
     </button>
   </form>
-
   <script src="js/script-min.js"></script>
-
 </body>
 </html>

@@ -1,11 +1,90 @@
+/* Кастомные веб-шрифты */
+@font-face {
+	font-family: 'gilroy';
+	url('fonts/gilroyextrabold.woff2') format('woff2'), 
+	url('fonts/gilroyextrabold.woff') format('woff'), 
+	url('fonts/gilroyextrabold.ttf') format('truetype'),
+	}
+
+@font-face {
+	font-family: 'gilroylight';
+	url('fonts/gilroylight.woff2') format('woff2'), 
+	url('fonts/gilroylight.woff') format('woff'), 
+	url('fonts/gilroylight.ttf') format('truetype'),
+	}
+
+@font-face {
+	font-family: 'opensans';
+	url('fonts/opensans.woff2') format('woff2'), 
+	url('fonts/opensans.woff') format('woff'), 
+	url('fonts/opensans.ttf') format('truetype'),
+	}
+
+@font-face {
+	font-family: 'opensanslight';
+	url('fonts/opensanslight.woff2') format('woff2'), 
+	url('fonts/opensanslight.woff') format('woff'), 
+	url('fonts/opensanslight.ttf') format('truetype'),
+	}
+
+
+/* Общие стили */
+
+body {
+	font-family: 'opensanslight', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	}
+
+a {
+	text-decoration: none;
+}
+
+
+.main-title {
+	font-family: 'gilroy', sans-serif;
+	font-size: 47px;
+  font-weight: 900;
+  line-height: 56px;
+	}
+
+.main-header__main-item {
+	font-family: 'gilroy', sans-serif;
+	font-size: 18px;
+  font-weight: 900;
+  line-height: 22px;
+	}
+
+
+
 li {
-    list-style-type: none; /* Убираем маркеры */
-   }
-   ul {
-    margin-left: 25; /* Отступ слева в браузере IE и Opera */
-    padding-left: 25; /* Отступ слева в браузере Firefox, Safari, Chrome */
-   }
+	list-style-type: none; /* Убираем маркеры у элементов списка*/
+	}
+
+ul {
+	margin-left: 25; /* Отступ слева в браузере IE и Opera */
+  padding-left: 25; /* Отступ слева в браузере Firefox, Safari, Chrome */
+  }
 
 .font-none {
+	font-size: 0;
+	line-height: 0;
+	}
+
+/* Универсальный класс, только визуальное скрытие с сохранением доступности */
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+  padding: 0;
+  clip: react(0 0 0 0);
+  overflow: hidden;
+  }
+
+.modal-close-btn 
+  {
   font-size: 0;
-}
+  line-height: 0;
+  }
