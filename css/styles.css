@@ -31,7 +31,7 @@
 /* Общие стили */
 
 body {
-	font-family: 'opensanslight', sans-serif;
+	font-family: 'opensanslight', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
 	}
@@ -42,14 +42,14 @@ a {
 
 
 .main-title {
-	font-family: 'gilroy', sans-serif;
+	font-family: 'gilroy', 'Georgia', serif;
 	font-size: 47px;
   font-weight: 900;
   line-height: 56px;
 	}
 
 .main-header__main-item {
-	font-family: 'gilroy', sans-serif;
+	font-family: 'gilroy', 'Georgia', serif;
 	font-size: 18px;
   font-weight: 900;
   line-height: 22px;
