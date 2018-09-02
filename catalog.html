@@ -152,24 +152,42 @@
             </div>
           </fieldset>
           <fieldset class="filter__field filter__field--middle">
-            <legend class="filter__legend">Цвет</legend>
-            <input type="checkbox" name="color" value="black" id="cb-black" class="filter__input visually-hidden">
-            <label for="cb-black" class="filter__label filter__label--checkbox">Черный</label>
-            <input type="checkbox" name="color" value="white" id="cb-white" class="filter__input visually-hidden">
-            <label for="cb-white" class="filter__label filter__label--checkbox">Белый</label>
-            <input type="checkbox" name="color" value="blue" id="cb-blue" class="filter__input visually-hidden">
-            <label for="cb-blue" class="filter__label filter__label--checkbox">Синий</label>
-            <input type="checkbox" name="color" value="red" id="cb-red" class="filter__input visually-hidden">
-            <label for="cb-red" class="filter__label filter__label--checkbox">Красный</label>
-            <input type="checkbox" name="color" value="pink" id="cb-pink" class="filter__input visually-hidden">
-            <label for="cb-pink" class="filter__label filter__label--checkbox">Розовый</label>
-          </fieldset>
+              <legend class="filter__legend">Цвет</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="color" value="black" id="cb-black" class="filter__input visually-hidden">
+                  <label for="cb-black" class="filter__label filter__label--checkbox">Черный</label>
+                </li>
+                <li>
+              <input type="checkbox" name="color" value="white" id="cb-white" class="filter__input visually-hidden">
+              <label for="cb-white" class="filter__label filter__label--checkbox">Белый</label>
+                </li>
+                <li>
+              <input type="checkbox" name="color" value="blue" id="cb-blue" class="filter__input visually-hidden">
+              <label for="cb-blue" class="filter__label filter__label--checkbox">Синий</label>
+                </li>
+                <li>
+              <input type="checkbox" name="color" value="red" id="cb-red" class="filter__input visually-hidden">
+              <label for="cb-red" class="filter__label filter__label--checkbox">Красный</label>
+                </li>
+                <li>
+              <input type="checkbox" name="color" value="pink" id="cb-pink" class="filter__input visually-hidden">
+              <label for="cb-pink" class="filter__label filter__label--checkbox">Розовый</label>
+                </li>
+              </ul>  
+            </fieldset>
           <fieldset class="filter__field filter__field--bottom">
             <legend class="filter__legend">Bluetooth</legend>
+          <ul class="advantages__btn-container">
+            <li> 
             <input type="radio" name="bluetooth" value="1" id="bluetooth-1" class="filter__input visually-hidden">
             <label for="bluetooth-1" class="filter__label filter__label--radio">Есть</label>
+            </li>
+            <li> 
             <input type="radio" name="bluetooth" value="0" id="bluetooth-0" class="filter__input visually-hidden">
             <label for="bluetooth-0" class="filter__label filter__label--radio">Нет</label>
+            </li>
+          </ul> 
           </fieldset>
           <button type="submit" class="btn">Показать</button>
         </form>
