@@ -69,6 +69,9 @@ ul {
 .font-none {
 	font-size: 0;
 	line-height: 0;
+	margin: -1px;
+	border: 0;
+  padding: 0;
 	}
 
 /* Универсальный класс, только визуальное скрытие с сохранением доступности */
