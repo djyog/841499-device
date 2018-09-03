@@ -3,9 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet" type="text/css"/>
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="page page--not-logged">
   <header>
@@ -16,7 +15,7 @@
         <a href="#">
           <img src="img/svg/logo.svg" alt="DEVICE">
         </a>       
-     </p   
+     </p>
       <nav class="main-header__nav">
         <div class="main-header__row">
           <form action="#" method="get" class="search main-header__column">
@@ -233,7 +232,7 @@
           <section class="advantages__point slider__slide slider__slide--active">
             <div class="advantages__inner advantages__inner--delivery">
               <div class="advantages__info">
-                <h3 class="main-title">Доставка</h3>
+                <h3 class="main-title_advantages">Доставка</h3>
                 <p
                 class="main-para advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                 </p>
@@ -244,7 +243,7 @@
         <section class="advantages__point slider__slide">
           <div class="advantages__inner advantages__inner-warranty">
             <div class="advantages__info">
-              <h3 class="main-title">Гарантия</h3>
+              <h3 class="main-title_advantages">Гарантия</h3>
               <p
               class="main-para advantages__para">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
               </p>
@@ -254,7 +253,7 @@
         <section class="advantages__point slider__slide">
           <div class="advantages__inner advantages__inner--credit">
             <div class="advantages__info">
-              <h3 class="main-title">Кредит</h3>
+              <h3 class="main-title_advantages">Кредит</h3>
               <p
               class="main-para advantages__para">Залезть в долговую яму стало проще! Кредитные консультанты   подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
               </p>
@@ -292,20 +291,20 @@
           </p>
           <p
           class="main-para main-para--brief-info">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
-        </p>
+          </p>
+        </div>
+        <ul class="custom-list-white-circles brief-info__list">
+          <li class="custom-list-white-circles-item">
+            Деловые Линии
+          </li>
+          <li class="custom-list-white-circles-item">
+            Автотрейдинг
+          </li>
+          <li class="custom-list-white-circles-item">
+            ЖелДорЭкспедиция
+          </li>
+        </ul>
       </div>
-      <ul class="custom-list-white-circles brief-info__list">
-        <li class="custom-list-white-circles-item">
-          Деловые Линии
-        </li>
-        <li class="custom-list-white-circles-item">
-          Автотрейдинг
-        </li>
-        <li class="custom-list-white-circles-item">
-          ЖелДорЭкспедиция
-        </li>
-      </ul>
-    </div>
     </div> 
     <div class="brief-info__block">
       <h2 class="main-title brief-info__main-title decoline decoline--black">Контакты</h2>
@@ -328,59 +327,62 @@
   </main>
   <footer class="main-footer">
     <div class="container">
-      <div class="main-footer__logo-and-user main-footer__row">
-        <img src="img/svg/logo.svg" alt="Логотип магазина DEVICE">
-          <ul class="main-header__user-list main-header__column">
-            <li class="main-header__user-item main-header__user-item--login">
-              <a class="icon-link main-header__link user-is-logged-out" href="#">
-                Войти
-              </a>
-             </li>
-            <li class="user-is-logged-in main-header__user-item">
-              <a href="#">
-                Сравнить
-              </a>
-            </li>
-            <li class="user-is-logged-in main-header__user-item">
-              <a href="#">
-                Корзина
-              </a>
-            </li>
-          </ul>
+      <p class="main-title main-footer--logo">  
+        <a href="#">
+        <img src="img/svg/logo-orange.svg" alt="DEVICE">
+        </a>
+      </p> 
+      <ul class="main-header__user-list main-header__column">
+        <li class="main-footer__user-item main-header__user-item--login">
+          <a class="main-footer__link" href="#">
+            Войти
+          </a>
+        </li>
+        <li class="user-is-logged-in main-footer__user-item">
+          <a class="main-footer__link" href="#">
+            Сравнить
+          </a>
+        </li>
+        <li class="user-is-logged-in main-footer__user-item">
+          <a class="main-footer__link" href="#">
+            Корзина
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="main-footer__main-menu main-footer__row">
+      <p class="main-footer__text main-footer__column main-footer__column--short">г. Москва, ул. Строителей,  15</p>
+      <ul class="main-footer__main-list main-footer__column main-footer__column--medium">
+        <li>
+          <a class="main-footer__main-item" href="#">Доставка</a>
+        </li>
+        <li>
+          <a class="main-footer__main-item" href="#">Гарантия</a>
+        </li>
+        <li>
+          <a class="main-footer__main-item" href="#">Контакты</a>
+        </li>
+      </ul>
+      <div class="main-footer__column main-footer__column--short">
+        <p class="main-footer__text"> Тел.:
+          <a class="main-footer__phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
+        </p>  
       </div>
-      <div class="main-footer__main-menu main-footer__row">
-        <p class="main-footer__text main-footer__column main-footer__column--short">г. Москва, ул. Строителей,  15</p>
-        <ul class="main-footer__main-list main-footer__column main-footer__column--medium">
-          <li class="main-footer__main-item">
-            <a href="#">Доставка</a>
-          </li>
-          <li class="main-footer__main-item">
-            <a href="#">Гарантия</a>
-          </li>
-          <li class="main-footer__main-item">
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-        <div class="main-footer__column main-footer__column--short">
-          <p class="main-footer__text main-footer__phone">Тел.:
-            <a href="tel:+74954959595">+7 (495) 495-95-95</a>
-          </p>
-        </div>
-      </div>
-      <div class="main-footer__row">
+    </div>
+    <div class="main-footer__row">
         <ul class="socials socials--footer decoline decoline--footer decoline--orange main-footer__column main-footer__column--long">
           <li class="socials-item">
-            <a href="#" class="socials__fb">
+            <a href="#" class="socials__link">
               <img src="img/svg/fb.svg" alt="Фейсбук">	
             </a>
           </li>
           <li class="socials-item">
-            <a href="#" class="socials__inst">
+            <a href="#" class="socials__link">
               <img src="img/svg/instagram.svg" alt="Инстаграм">
             </a>
           </li>
           <li class="socials-item">
-            <a href="#" class="socials__twit">
+            <a href="#" class="socials__link">
               <img src="img/svg/twitter.svg" alt="Твиттер">
             </a>
           </li>
@@ -388,18 +390,16 @@
         <div class="academy-logo academy-logo--footer">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
           	<img src="img/svg/logo-html.svg" alt="HTML Academy">
-            HTML Academy
           </a>
         </div>
       </div>
-    </div>
   </footer>
   <div class="popup-map hidden">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.482165223512!2d37.52813139297608!3d55.687642925012305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504602285796"
       width="960" height="565">
-      Карта
     </iframe>
+      Карта
     <button type="button" class="modal-close-btn modal-close-btn--map">
       Скрыть
     </button>
@@ -421,7 +421,7 @@
         <div class="popup-form__input-container popup-form__input-container--for-textarea">
           <label for="user_mailtext">Текст письма:</label>
           <textarea name="user_mailtext" class="custom-input popup-form__textarea" id="user_mailtext" placeholder="В свободной форме">
-        </textarea>
+          </textarea>
         </div>
         <div class="popup-form__btn-container">
           <button type="submit" class="btn">Отправить</button>

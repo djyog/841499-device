@@ -1,108 +1,183 @@
 /* Кастомные веб-шрифты */
 @font-face {
-	font-family: 'gilroy';
-	url('fonts/gilroyextrabold.woff2') format('woff2'), 
-	url('fonts/gilroyextrabold.woff') format('woff'), 
-	url('fonts/gilroyextrabold.ttf') format('truetype'),
+		font-family: 'gilroy';
+		url('fonts/gilroyextrabold.woff2') format('woff2'), 
+		url('fonts/gilroyextrabold.woff') format('woff')
 	}
-
 @font-face {
-	font-family: 'gilroylight';
-	url('fonts/gilroylight.woff2') format('woff2'), 
-	url('fonts/gilroylight.woff') format('woff'), 
-	url('fonts/gilroylight.ttf') format('truetype'),
+		font-family: 'gilroylight';
+		url('fonts/gilroylight.woff2') format('woff2'), 
+		url('fonts/gilroylight.woff') format('woff')
 	}
-
 @font-face {
-	font-family: 'opensans';
-	url('fonts/opensans.woff2') format('woff2'), 
-	url('fonts/opensans.woff') format('woff'), 
-	url('fonts/opensans.ttf') format('truetype'),
+		font-family: 'opensans';
+		url('fonts/opensans.woff2') format('woff2'), 
+		url('fonts/opensans.woff') format('woff')
 	}
-
 @font-face {
-	font-family: 'opensanslight';
-	url('fonts/opensanslight.woff2') format('woff2'), 
-	url('fonts/opensanslight.woff') format('woff'), 
-	url('fonts/opensanslight.ttf') format('truetype'),
+		font-family: 'opensanslight';
+		url('fonts/opensanslight.woff2') format('woff2'), 
+		url('fonts/opensanslight.woff') format('woff')
 	}
-
-
 /* Общие стили */
-
 body {
-	margin: 0;
-  padding: 0;
-
-	font-family: 'opensanslight', 'Arial', sans-serif;
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 24px;
-	 color: #464646;
-  
-	} 
-
-
-a {
-	text-decoration: none;
-	color: #464646;
-
-}
-
-
-.main-title {
-	font-family: 'gilroy', 'Georgia', serif;
-	font-size: 47px;
-  font-weight: 900;
-  line-height: 56px;
+  	margin: 0;
+  	padding: 0;
+  	font-family: "opensanslight", 'Arial', sans-serif;
+  	font-size: 15px;
+  	line-height: 24px;
+  	font-weight: 300;
+  	color: #464646;
+ 		background-color: #ffffff;
 	}
-
+footer {
+  	margin: 0;
+  	padding: 0;
+  	font-family: "opensanslight", 'Arial', sans-serif;
+  	font-size: 15px;
+  	line-height: 24px;
+  	font-weight: 300;
+  	color: #ffffff;
+  	background-color: #464646;
+	}
+.main-footer__link {
+  	margin: 0;
+  	padding: 0;
+  	font-family: "opensanslight", 'Arial', sans-serif;
+  	font-size: 15px;
+  	line-height: 24px;
+  	font-weight: 300;
+  	color: #ffffff;
+  	text-decoration: none;
+  	background-color: #464646;
+  	opacity: 0.7;
+	}
+.main-footer__main-item {
+  	margin: 0;
+  	padding: 0;
+  	font-family: "gilroy", 'Georgia', serif;
+  	font-size: 18px;
+  	line-height: 24px;
+  	font-weight: 900;
+  	color: #ffffff;
+  	letter-spacing: 0.2em;
+  	text-decoration: none;
+  	text-transform: uppercase;
+	}
+.main-header__nav {
+	  font-size: 15px;
+	  line-height: 30px;
+ 		color: #000000;
+  	background-color: #f7e296;
+	}
+.main-header__main-list,
+.catalog-list__category,
+.advantages__btn-container,
+.brief-info__list,
+.main-footer__main-list,
+.socials,
+.crumbs__list, 
+.sorting__list, 
+.sorting__triangles, 
+.color__list, 
+.paginator__list {
+		list-style: none;
+		margin-left: 25; /* Отступ слева в браузере IE и Opera */
+  	padding-left: 25; /* Отступ слева в браузере Firefox, Safari, Chrome */
+	}
+.main-header__main-list a,
+.catalog-list__category a,
+.advantages__btn-container a,
+.brief-info__list a,
+.socials a,
+.crumbs__list a, 
+.sorting__list a, 
+.sorting__triangles a, 
+.color__list a, 
+.paginator__list a,
+.product-card__link,
+.product-card__name,
+.main-footer__phone a,
+.academy-logo a,
+.device-types a {
+  	text-decoration: none;
+		color: #000000;
+	}
+.main-footer__main-list a, {
+  	text-decoration: none;
+		color: #ffffff;
+	}
+.main-footer__text,
+.main-footer__phone {
+  	margin: 0;
+  	padding: 0;
+		font-family: "opensanslight", 'Arial', sans-serif;
+  	font-size: 15px;
+  	line-height: 24px;
+  	font-weight: 300;
+  	text-decoration: none;
+  	letter-spacing: .0em;
+  	color: #ffffff;
+	}
+.main-title {
+		font-family: 'gilroy', 'Georgia', serif;
+		font-size: 47px;
+  	font-weight: 900;
+  	line-height: 48px;
+  	color: #000;
+	}
+.main-title_advantages {
+		font-family: 'gilroy', 'Georgia', serif;
+		font-size: 18px;
+  	font-weight: 900;
+  	line-height: 24px;
+  	text-transform: uppercase;
+  	letter-spacing: .2em;
+	}
 .main-header__main-item {
 	font-family: 'gilroy', 'Georgia', serif;
 	font-size: 18px;
   font-weight: 900;
   line-height: 24px;
   color: #000;
+  letter-spacing: 0.2em;
   border: none;
   background: none;
   text-transform: uppercase;
 	}
-
 .btn {
   font-family: 'gilroy', 'Georgia', serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 24px;
+  letter-spacing: 0.2em;
   color: #000;
   border: none;
   background: none;
+  text-decoration: none;
 	text-transform: uppercase;
 	}
-
-.main-para
-	{font-family: 'opensanslight', 'Arial', sans-serif;
+.main-para {
+	font-family: 'opensanslight', 'Arial', sans-serif;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 24px;
-	 color: #464646;
+	color: #464646;
 	} 
-
-.hero__para
-	{	font-family: 'opensanslight', 'Arial', sans-serif;
-		font-weight: 300;
-		font-size: 15px;
-		line-height: 24px;
-		color: #464646;
+.hero__para {	
+	font-family: 'opensanslight', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 24px;
+	color: #464646;
 	}
-
-.hero__facts dt 
-	{	font-family: inherit;
-  	font-size: 13px;
-  	font-weight: 300;
-  	line-height: 20px;
-  	color: #464646;
+.hero__facts dt {	
+	font-family: inherit;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 20px;
+  color: #464646;
 	}
-
 .hero__facts dd {
   font-family: 'gilroy', 'Georgia', serif;
   font-size: 36px;
@@ -112,9 +187,7 @@ a {
   margin-bottom: 10px;
   padding: 0;
 	}
-
-.advantages__btn-container
-	{
+.advantages__btn-container {
   width: 160px;
   margin-bottom: 24px;
   font-family: 'gilroy', 'Georgia', serif;
@@ -123,77 +196,144 @@ a {
   line-height: 24px;
   text-transform: uppercase;
 	}
-
-.main-header__user-list
-	{ margin: 0;
-  	padding: 0;
-  	color: #464646;
+.main-header__user-list { 
+	margin: 0;
+  padding: 0;
+  color: #464646;
+  list-style: none;
   }
-
-
-
 .main-title {
-  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Georgia', serif;
   font-size: 47px;
   font-weight: 900;
   line-height: 56px;
-
   margin: 0;
   padding: 0;
-
   letter-spacing: .01em;
-}
-
+	}
 .main-title--logo {
   font-size: 48px;
   line-height: 57px;
-
   text-transform: uppercase;
-}
-
+	}
 .main-title--logo a {
   text-decoration: none;
   color: inherit;
-}
-
-.main-title--logo a[href]:hover,
-.main-title--logo a[href]:focus {
-  opacity: .6;
-}
-
-.main-title--logo a[href]:active {
+	}
+.secondary-title {
+	font-family: 'Gilroy', 'Georgia', serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+	text-transform: uppercase;
+	}
+.product-card__name {
+	font-family: 'Gilroy', 'Georgia', serif;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+	}
+.filter__label	{
+	font-family: 'opensanslight', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 40px;
+	text-transform: none;
+	color: #000;
+	}
+.product-card__link--add	{
+	font-family: 'opensanslight', 'Arial', sans-serif;
+	font-weight: 300;
+	font-size: 13px;
+	line-height: 20px;
+	text-transform: none;
+	color: #000;
+	opacity: .5;
+	}
+.product-card__price {
+	font-family: 'gilroy', 'Georgia', serif;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 24px;
+	color: #464646;
+	}
+.crumbs-item,
+.sorting__item,
+.socials__link {
   opacity: .3;
-}
-
-
-
-
+	}
+.main-title--logo a[href]:hover,
+.main-title--logo a[href]:focus,
+.main-header__main-item:hover,
+.main-header__main-item:focus,
+.main-header__user-item a[href]:hover,
+.main-header__user-item a[href]:focus,
+.catalog-list__item a[href]:hover,
+.catalog-list__item a[href]:focus,
+.crumbs-item:hover,
+.crumbs-item:focus,
+.sorting__item:hover,
+.sorting__item:focus,
+.filter__label:hover,
+.filter__label:focus,
+.main-footer--logo a[href]:hover,
+.main-footer--logo a[href]:focus,
+.main-footer__main-item:hover,
+.main-footer__main-item:focus,
+.main-footer__phone:hover,
+.main-footer__phone:focus,
+.socials__link:hover,
+.socials__link:focus,
+.academy-logo a[href]:hover,
+.academy-logo a[href]:focus {
+  opacity: .6;
+	}
+.main-footer__link:hover,
+.main-footer__link:focus {
+  opacity: 1;
+	}
+.product-card__link--add:hover,
+.product-card__link--add:focus {
+  opacity: 1;
+	}
+.btn:hover,
+.btn:focus,
+.device-types__link p:hover,
+.device-types__link p:focus {
+  opacity: 1;
+	}
+.main-title--logo a[href]:active,
+.main-header__main-item:active,
+.catalog-list__item a[href]:active,
+.btn:active,
+.device-types__link p:active,
+.main-footer--logo a[href]:active,
+.main-footer__main-item:active,
+.main-footer__phone:active,
+.academy-logo a[href]:active {
+  opacity: .3;
+	}
+.crumbs-item:active,
+.socials__link:active {
+  opacity: .1;
+	}
+.sorting__item:active,
+.filter__label:active {
+  opacity: 1;
+	}
+.product-card__link--add:active {
+  opacity: .2;
+	}
+.main-footer__link:active,
+.main-header__user-item a:active
+	{
+  opacity: .3;
+	}
 .main-header__user-item a {
   text-decoration: none;
   color: inherit;
-}
-
-.main-header__user-item a:hover {
-  opacity: .6;
-}
-
-.main-header__user-item a:active {
-  opacity: .3;
-}
-
-
-
-
-
-li {
-	list-style-type: none; /* Убираем маркеры у элементов списка*/
 	}
-
-ul {
-	margin-left: 25; /* Отступ слева в браузере IE и Opera */
-  padding-left: 25; /* Отступ слева в браузере Firefox, Safari, Chrome */
-  }
-
 .font-none {
 	font-size: 0;
 	line-height: 0;
@@ -201,7 +341,6 @@ ul {
 	border: 0;
   padding: 0;
 	}
-
 /* Универсальный класс, только визуальное скрытие с сохранением доступности */
 .visually-hidden {
 	position: absolute;
@@ -213,9 +352,7 @@ ul {
   clip: react(0 0 0 0);
   overflow: hidden;
   }
-
-.modal-close-btn 
-  {
+.modal-close-btn {
   font-size: 0;
   line-height: 0;
   }
