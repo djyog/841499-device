@@ -1,52 +1,49 @@
 /* Кастомные веб-шрифты */
+
 @font-face {
-		font-family: 'gilroy';
-		url('fonts/gilroyextrabold.woff2') format('woff2'), 
-		url('fonts/gilroyextrabold.woff') format('woff')
-	}
+  font-family: 'Gilroy';
+  src: url('fonts/gilroyextrabold.woff2') format('woff2'),
+       url('fonts/gilroyextrabold.woff') format('woff');
+  font-weight: 900;
+  font-style: bold;
+}
+
 @font-face {
-		font-family: 'gilroylight';
-		url('fonts/gilroylight.woff2') format('woff2'), 
-		url('fonts/gilroylight.woff') format('woff')
-	}
+  font-family: 'Gilroy';
+  src: url('fonts/gilroylight.woff2') format('woff2'),
+  		 url('fonts/gilroylight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
 @font-face {
-		font-family: 'opensans';
-		url('fonts/opensans.woff2') format('woff2'), 
-		url('fonts/opensans.woff') format('woff')
-	}
-@font-face {
-		font-family: 'opensanslight';
-		url('fonts/opensanslight.woff2') format('woff2'), 
-		url('fonts/opensanslight.woff') format('woff')
-	}
+  font-family: 'Open Sans';
+  src: url('fonts/opensanslight.woff2')  format('woff2'),
+  		 url('fonts/opensanslight.woff')  format('woff');
+  font-weight: 300;              
+  font-style: normal;
+}
+
 /* Общие стили */
 body {
   	margin: 0;
   	padding: 0;
-  	font-family: "opensanslight", 'Arial', sans-serif;
+  	font-family: "Open Sans", 'Arial', sans-serif;
+  	font-style: normal;
   	font-size: 15px;
   	line-height: 24px;
-  	font-weight: 300;
   	color: #464646;
  		background-color: #ffffff;
 	}
 footer {
   	margin: 0;
   	padding: 0;
-  	font-family: "opensanslight", 'Arial', sans-serif;
-  	font-size: 15px;
-  	line-height: 24px;
-  	font-weight: 300;
   	color: #ffffff;
   	background-color: #464646;
 	}
 .main-footer__link {
   	margin: 0;
   	padding: 0;
-  	font-family: "opensanslight", 'Arial', sans-serif;
-  	font-size: 15px;
-  	line-height: 24px;
-  	font-weight: 300;
   	color: #ffffff;
   	text-decoration: none;
   	background-color: #464646;
@@ -55,10 +52,10 @@ footer {
 .main-footer__main-item {
   	margin: 0;
   	padding: 0;
-  	font-family: "gilroy", 'Georgia', serif;
+  	font-family: "Gilroy", 'Georgia', serif;
+  	font-style: bold;
   	font-size: 18px;
   	line-height: 24px;
-  	font-weight: 900;
   	color: #ffffff;
   	letter-spacing: 0.2em;
   	text-decoration: none;
@@ -111,33 +108,29 @@ footer {
 .main-footer__phone {
   	margin: 0;
   	padding: 0;
-		font-family: "opensanslight", 'Arial', sans-serif;
-  	font-size: 15px;
-  	line-height: 24px;
-  	font-weight: 300;
   	text-decoration: none;
   	letter-spacing: .0em;
   	color: #ffffff;
 	}
 .main-title {
-		font-family: 'gilroy', 'Georgia', serif;
+		font-family: 'Gilroy', 'Georgia', serif;
+		font-style: bold;
 		font-size: 47px;
-  	font-weight: 900;
   	line-height: 48px;
   	color: #000;
 	}
 .main-title_advantages {
-		font-family: 'gilroy', 'Georgia', serif;
+		font-family: 'Gilroy', 'Georgia', serif;
+		font-style: bold;
 		font-size: 18px;
-  	font-weight: 900;
   	line-height: 24px;
   	text-transform: uppercase;
   	letter-spacing: .2em;
 	}
 .main-header__main-item {
-	font-family: 'gilroy', 'Georgia', serif;
+	font-family: 'Gilroy', 'Georgia', serif;
+	font-style: bold;
 	font-size: 18px;
-  font-weight: 900;
   line-height: 24px;
   color: #000;
   letter-spacing: 0.2em;
@@ -146,9 +139,9 @@ footer {
   text-transform: uppercase;
 	}
 .btn {
-  font-family: 'gilroy', 'Georgia', serif;
+  font-family: 'Gilroy', 'Georgia', serif;
+  font-style: bold;
   font-size: 18px;
-  font-weight: 900;
   line-height: 24px;
   letter-spacing: 0.2em;
   color: #000;
@@ -158,17 +151,9 @@ footer {
 	text-transform: uppercase;
 	}
 .main-para {
-	font-family: 'opensanslight', 'Arial', sans-serif;
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 24px;
 	color: #464646;
 	} 
 .hero__para {	
-	font-family: 'opensanslight', 'Arial', sans-serif;
-	font-weight: 300;
-	font-size: 15px;
-	line-height: 24px;
 	color: #464646;
 	}
 .hero__facts dt {	
@@ -179,9 +164,9 @@ footer {
   color: #464646;
 	}
 .hero__facts dd {
-  font-family: 'gilroy', 'Georgia', serif;
+  font-family: 'Gilroy', 'Georgia', serif;
+  font-style: normal;
   font-size: 36px;
-  font-weight: 300;
   line-height: 48px;
   margin: 0;
   margin-bottom: 10px;
@@ -190,9 +175,9 @@ footer {
 .advantages__btn-container {
   width: 160px;
   margin-bottom: 24px;
-  font-family: 'gilroy', 'Georgia', serif;
+  font-family: 'Gilroy', 'Georgia', serif;
+  font-style: bold;
   font-size: 18px;
-  font-weight: 900;
   line-height: 24px;
   text-transform: uppercase;
 	}
@@ -204,8 +189,8 @@ footer {
   }
 .main-title {
   font-family: 'Gilroy', 'Georgia', serif;
+  font-style: bold;
   font-size: 47px;
-  font-weight: 900;
   line-height: 56px;
   margin: 0;
   padding: 0;
@@ -222,29 +207,25 @@ footer {
 	}
 .secondary-title {
 	font-family: 'Gilroy', 'Georgia', serif;
+	font-style: bold;
   font-size: 16px;
-  font-weight: 900;
   line-height: 24px;
   letter-spacing: 0.2em;
 	text-transform: uppercase;
 	}
 .product-card__name {
 	font-family: 'Gilroy', 'Georgia', serif;
+	font-style: bold;
   font-size: 18px;
-  font-weight: 900;
   line-height: 24px;
 	}
 .filter__label	{
-	font-family: 'opensanslight', 'Arial', sans-serif;
-	font-weight: 300;
 	font-size: 14px;
 	line-height: 40px;
 	text-transform: none;
 	color: #000;
 	}
 .product-card__link--add	{
-	font-family: 'opensanslight', 'Arial', sans-serif;
-	font-weight: 300;
 	font-size: 13px;
 	line-height: 20px;
 	text-transform: none;
@@ -252,8 +233,8 @@ footer {
 	opacity: .5;
 	}
 .product-card__price {
-	font-family: 'gilroy', 'Georgia', serif;
-	font-weight: 300;
+	font-family: 'Gilroy', 'Georgia', serif;
+	font-style: normal;
 	font-size: 16px;
 	line-height: 24px;
 	color: #464646;
