@@ -7,9 +7,9 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
-<body class="page--not-logged">
+<body>
   <header class="main-header">
-    <div class="container">
+    <div class="main-container">
      <h1 class="visually-hidden">HTML Academy: Девайс
      </h1>
      <p class="main-title logo logo__headerposition">
@@ -121,7 +121,7 @@
       <li class="slider-item">
       <div class="hero slider__slide_1 slider__slide--active">
         <div class="product_number"> 01 
-        </div>  
+        </div> 
         <div class="hero__block hero__block--image">
         <img src="img/cont/slide_1.png" alt="Невероятно длинная селфи-палка" width="384" height="486">          
         </div>
@@ -282,92 +282,115 @@
     </ul>
     </section>
     </div>
+
     <div class="gray-bg">
       <section class="advantages">
       <div class="vertical_line"> 
       </div>
       <div class="advantages-slider-container">
         <h2 class="visually-hidden">С нами выгодно!</h2>
+        <input type="radio" name="advantage" value="1" id="advantage_delivery" class="btn advantages__btn advantages__btn--active visually-hidden" checked>
+        <input type="radio" name="advantage" value="2" id="advantage_warranty" class="btn advantages__btn visually-hidden">
+        <input type="radio" name="advantage" value="3" id="advantage_credit" class="btn advantages__btn visually-hidden">
         <div class="advantages__buttons slider__buttons">
           <ul class="advantages__btn-container">
             <li> 
-              <input type="radio" name="advantage" value="1" id="advantage_delivery" class="btn advantages__btn advantages__btn--active visually-hidden">
-              <label for="advantage_delivery" class="filter__label filter__label--radio">Доставка</label>
+              <label for="advantage_delivery" class="filter__label filter__label--1">Доставка</label>
             </li>
             <li> 
-              <input type="radio" name="advantage" value="2" id="advantage_warranty" class="btn advantages__btn visually-hidden">
-              <label for="advantage_warranty" class="filter__label filter__label--radio">Гарантия</label>
+              <label for="advantage_warranty" class="filter__label filter__label--2">Гарантия</label>
             </li>
             <li> 
-              <input type="radio" name="advantage" value="3" id="advantage_credit" class="btn advantages__btn visually-hidden">
-              <label for="advantage_credit" class="filter__label filter__label--radio">Кредит</label>
+              <label for="advantage_credit" class="filter__label filter__label--3">Кредит</label>
             </li>
           </ul>
-          <section class="advantages__point slider__slide slider__slide--active">
-            <div class="advantages__inner advantages__inner--delivery">
-              <div class="advantages__info">
-                <h3 class="main-title_advantages">Доставка</h3>
-                <p
-                class="main-para advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-                </p>
-              </div>
-            </div>
-          </section>
         </div>
-        <section class="advantages__point slider__slide">
-          <div class="advantages__inner advantages__inner-warranty">
-            <div class="advantages__info">
-              <h3 class="main-title_advantages">Гарантия</h3>
-              <p
-              class="main-para advantages__para">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-              </p>
-            </div>
-          </div>
-        </section>
-        <section class="advantages__point slider__slide">
-          <div class="advantages__inner advantages__inner--credit">
-            <div class="advantages__info">
-              <h3 class="main-title_advantages">Кредит</h3>
-              <p
-              class="main-para advantages__para">Залезть в долговую яму стало проще! Кредитные консультанты   подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-              </p>
-            </div>
-          </div>
-        </section>
+
+        <ul class="advantages-slider-list">
+
+          <li class="advantages-slider-item">
+            <section class="advantages__point slider__slide">
+              <div class="advantages__inner-delivery">
+                <div class="advantages__info info-text">
+                  <h3 class="main-title_advantages">Доставка</h3>
+                  <p
+                  class="main-para advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </li> 
+          
+          <li class="advantages-slider-item">
+            <section class="advantages__point slider__slide">
+              <div class="advantages__inner-warranty">
+                <div class="advantages__info info-text">
+                  <h3 class="main-title_advantages">Гарантия</h3>
+                    <p
+                    class="main-para advantages__para">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                    </p>
+                </div>
+              </div>
+            </section>
+           </li>
+           
+          <li class="advantages-slider-item">  
+            <section class="advantages__point slider__slide">
+              <div class="advantages__inner-credit">
+                <div class="advantages__info info-text">
+                  <h3 class="main-title_advantages">Кредит</h3>
+                  <p
+                  class="main-para advantages__para">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </li>
+
+        </ul>
+            
       </div>  
       </section>
     </div>
-    <div class="partners container">
+    <div class="partners container page-center">
       <h2 class="visually-hidden">Бренды наших товаров</h2>
       <ul class="partners__list font-none">
-        <li class="partners__item">
+        <li class="partners__item-dji">
           <a class="partners__link partners__link-dji" href="#">Бренд dji
           </a>
         </li>
-        <li class="partners__item">
-          <a class="partners__link partners__link--sp" href="#">Бренд sp
+        <li class="partners__item-sp">
+          <a class="partners__link partners__link--spgadgets" href="#">Бренд spgadgets
           </a>
         </li>
-        <li class="partners__item">
+        <li class="partners__item-gopro">
          	<a class="partners__link partners__link--gopro" href="#">Бренд gopro
           </a>
         </li>
-        <li class="partners__item">
+        <li class="partners__item-vive">
           <a class="partners__link partners__link--vive" href="#">Бренд vive
           </a>
         </li>
       </ul>
     </div>
-    <div class="brief-info container brief-info__blocks">
-      <div class="brief-info__block">
+
+
+
+    <div class="brief-info-container">
+    
+    <ul class="brief-info__blocks">
+    <li class="brief-info__block">  
+      <div>
         <h2 class="main-title brief-info__main-title decoline decoline--black">О нас</h2>
-        <div class="briefinfo-about-us">
+
+        <div class="briefinfo-about-us info-text">
           <p class="main-para brief-info__para">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
           <p
           class="main-para main-para--brief-info">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
         </div>
+
         <ul class="custom-list-white-circles brief-info__list">
           <li class="custom-list-white-circles-item">
             Деловые Линии
@@ -379,14 +402,21 @@
             ЖелДорЭкспедиция
           </li>
         </ul>
-      </div>
-    </div> 
-    <div class="brief-info__block">
-      <h2 class="main-title brief-info__main-title decoline decoline--black">Контакты</h2>
-      <p class="main-para brief-info__para">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+      </div> 
+  </li>
+
+  <li class="brief-info__block">
+    <div>
+    <div>
+      <h2 class="main-title brief-info__main-title decoline">Контакты</h2>
+      <p class="main-para brief-info__para info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       </p>
       <img src="img/cont/map.jpg" alt="Карта">
     </div>
+ </div>
+  </li>  
+  </ul>
+
     <div class="brief-info__buttons">
       <div class="brief-info__buttons-part">
         <div class="brief-info__btn-container">
@@ -399,54 +429,59 @@
         </div>
       </div>
     </div>
+   
   </div>
   </main>
-  <footer class="main-footer">
-    <div class="container">
-      <p class="main-title logo font-none">  
-        <a href="#">
-        <img src="img/svg/logo-orange.svg" alt="DEVICE">
-        DEVICE
-        </a>
-      </p> 
-      <ul class="main-header__user-list main-header__column">
-        <li class="main-footer__user-item main-header__user-item--login">
-          <a class="main-footer__link" href="#">
-            Войти
-          </a>
-        </li>
-        <li class="user-is-logged-in main-footer__user-item">
-          <a class="main-footer__link" href="#">
-            Сравнить
-          </a>
-        </li>
-        <li class="user-is-logged-in main-footer__user-item">
-          <a class="main-footer__link" href="#">
-            Корзина
-          </a>
-        </li>
-      </ul>
-    </div>
-    <div class="main-footer__main-menu main-footer__row">
-      <p class="main-footer__text main-footer__column main-footer__column--short">г. Москва, ул. Строителей,  15</p>
-      <ul class="main-footer__main-list main-footer__column main-footer__column--medium">
-        <li>
-          <a class="main-footer__main-item" href="#">Доставка</a>
-        </li>
-        <li>
-          <a class="main-footer__main-item" href="#">Гарантия</a>
-        </li>
-        <li>
-          <a class="main-footer__main-item" href="#">Контакты</a>
-        </li>
-      </ul>
-      <div class="main-footer__column main-footer__column--short">
-        <p class="main-footer__text"> Тел.:
-          <a class="main-footer__phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
-        </p>  
+
+  <footer>
+    <div class="main-footer">
+      <div class="footer-center"> 
+        <div class="container">
+          <p class="main-title logo font-none">  
+            <a href="#"> <img src="img/svg/logo-orange.svg" alt="DEVICE"> DEVICE </a>
+          </p>
+          <div class="footer-container">
+          <div class="right-column info-text">  
+            <ul class="main-header__user-list main-header__column hr">
+              <li class="main-footer__user-item user-item__user-orange">
+              <a class="main-footer__link" href="#">
+              Войти
+              </a>
+              </li>
+              <li class="main-footer__user-item user-item__compare-orange">
+                <a class="main-footer__link" href="#">
+                Сравнить
+                </a>
+              </li>
+              <li class="main-footer__user-item user-item__cart-orange">
+                <a class="main-footer__link" href="#">
+                Корзина
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="main-footer__row">
+      <div class="main-footer__main-menu main-footer__row">
+        <p class="main-footer__column main-footer__column--short info-text-white">г. Москва, ул. Строителей,  15</p>
+        <ul class="main-footer__main-list main-footer__column main-footer__column--medium">
+          <li>
+            <a class="main-footer__main-item" href="#">Доставка</a>
+          </li>
+          <li>
+            <a class="main-footer__main-item" href="#">Гарантия</a>
+          </li>
+          <li>
+            <a class="main-footer__main-item" href="#">Контакты</a>
+          </li>
+        </ul>
+        <div class="main-footer__column main-footer__column--short">
+          <p class="main-footer__text info-text-white"> Тел.:
+            <a class="main-footer__phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
+          </p>  
+        </div>
+      </div>
+      <div class="main-footer__row">
         <ul class="socials socials--footer decoline decoline--footer decoline--orange main-footer__column main-footer__column--long">
           <li class="socials-item">
             <a href="#" class="socials__link font-none">
@@ -467,14 +502,18 @@
             </a>
           </li>
         </ul>
-        <div class="logo font-none">
+        <div class="logo logo-academy font-none">
           <a href="https://htmlacademy.ru/intensive/htmlcss">
           	<img src="img/svg/logo-html.svg" alt="HTML Academy">
             HTML Academy
           </a>
         </div>
       </div>
+    </div>  
+  </div>
   </footer>
+
+
   <div class="popup-map hidden">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.482165223512!2d37.52813139297608!3d55.687642925012305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504602285796"
@@ -485,6 +524,9 @@
       Скрыть
     </button>
   </div>
+
+
+
   <form action="post" class="popup-form hidden">
     <fieldset class="popup-form__field">
       <legend class="visually-hidden">Форма обратной связи</legend>
@@ -516,3 +558,4 @@
   <script src="js/script-min.js"></script>
 </body>
 </html>
+
