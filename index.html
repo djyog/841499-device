@@ -56,7 +56,7 @@
                 Каталог товаров 
               </a>
               <ul class="sub-menu">  
-                <div class="catalog-list">
+                <li class="catalog-list">
                   <ul class="catalog-list__category">
                     <li class="catalog-list__item">
                       <a href="#">Виртуальная реальность</a>
@@ -83,7 +83,7 @@
                       <a href="#">Квадрокоптеры</a>
                     </li>
                   </ul>
-                </div>
+                </li>
               </ul>  
             </li>
           </ul>
@@ -114,14 +114,11 @@
           <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
           <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
-
-
-      <ul class="slider-list">
-
-      <li class="slider-item">
-      <div class="hero slider__slide_1 slider__slide--active">
-        <div class="product_number"> 01 
-        </div> 
+        <ul class="slider-list">
+        <li class="slider-item">
+        <div class="hero slider__slide_1 slider__slide--active">
+          <div class="product_number"> 01 
+          </div> 
         <div class="hero__block hero__block--image">
         <img src="img/cont/slide_1.png" alt="Невероятно длинная селфи-палка" width="384" height="486">          
         </div>
@@ -136,24 +133,23 @@
           <div class="hero_button-container">
             <a href="#" class="btn">Подробнее</a>
           </div>
-          <dl class="hero__facts">          
-            <div class="hero__facts-col">
-              <dd>8,5 м</dd>
-              <dt>Длина палки</dt> 
-            </div>
-            <div class="hero__facts-col">
+          <div class="hero__facts">          
+            <dl class="hero__facts-col">
+              <dt>Длина палки</dt>
+              <dd>8,5 м</dd> 
+            </dl>
+            <dl class="hero__facts-col">
+              <dt>Вес палки</dt> 
               <dd>5 кг</dd>
-              <dt>Вес палки</dt>
-            </div>          
-            <div class="hero__facts-col">
+            </dl>          
+            <dl class="hero__facts-col">
+              <dt>Материал</dt>             
               <dd>Карбон</dd>
-              <dt>Материал</dt>
-            </div>
-          </dl>
+            </dl>
+          </div>
         </div>
       </div>
       </li>
-
       <li class="slider-item">
       <article class="hero slider__slide_2">
         <h3 class="visually-hidden">Фитнес-браслет
@@ -171,16 +167,15 @@
           <div class="hero__button-container">
             <a href="#" class="btn">Подробнее</a>
           </div>
-          <dl class="hero__facts">
-            <div class="hero__facts-col">
+          <div class="hero__facts">
+            <dl class="hero__facts-col">
+              <dt>Без подзарядки</dt>              
               <dd>48 часов</dd>
-              <dt>Без подзарядки</dt>
-            </div>
-          </dl>
+            </dl>
+          </div>
         </section>
       </article>
       </li>
-
       <li class="slider-item">
       <article class="hero slider__slide_3">
         <h3 class="visually-hidden">Жалящий квадрокоптер
@@ -200,20 +195,20 @@
           <div class="hero__button-container">
             <a href="#" class="btn">Подробнее</a>
           </div>
-          <dl class="hero__facts">
-            <div class="hero__facts-col">
-              <dd>800 м</dd>
+          <div class="hero__facts">
+            <dl class="hero__facts-col">
               <dt>Дальность полета</dt>
-            </div>
-            <div class="hero__facts-col">            
-              <dd>50 м</dd>
+              <dd>800 м</dd>
+            </dl>
+            <dl class="hero__facts-col"> 
               <dt>Радиус поражения</dt>
-            </div>
-          </dl>
+              <dd>50 м</dd>
+            </dl>
+          </div>
         </section>
       </article>
       </li>
-
+    </ul>
       <div class="slider__buttons hero__slider-buttons">
         <button type="button" class="visually-hidden hero__slider-button hero__slider-button--active" name="tovar1" value="1">
           1
@@ -225,64 +220,65 @@
           3
         </button>
       </div>
+    </div>
     </section>
     <div class="main_container">
     <section class="container">
       <h2 class="visually-hidden">Категории устройств</h2>
       <div class="device-column">
-      <ul class="device-types">
-      <li class="device-types__link"> 
-      <a href="#">
-        <div class="device-types__container">
-          <img src="img/svg/popular-1.svg" alt="Виртуальная реальность">
-        </div> 
-        <p class="devicetypes-para">Виртуальная реальность</p>
-      </a>
-      </li>
-      <li class="device-types__link"> 
-      <a href="catalog.html">
-        <div class="device-types__container_popular-2">
-          <img src="img/svg/popular-2.svg" alt="Моноподы для селфи">
-        </div> 
-        <p class="devicetypes-para">Моноподы для селфи</p>
-      </a>
-      </li>
-      <li class="device-types__link"> 
-      <a href="#">
-        <div class="device-types__container">
-          <img src="img/svg/popular-3.svg" alt="Экшн-камеры">
-        </div> 
-        <p class="devicetypes-para">Экшн-камеры</p>
-      </a>
-      </li>
-      <li class="device-types__link">   
-      <a href="#">
-        <div class="device-types__container">
-          <img src="img/svg/popular-4.svg" alt="Фитнес-браслеты">
-        </div> 
-        <p class="devicetypes-para">Фитнес-браслеты</p>
-      </a>      
-      </li>
-      <li class="device-types__link">  
-      <a href="#">
-        <div class="device-types__container">
-          <img src="img/svg/popular-5.svg" alt="Умные часы">
-        </div> 
-        <p class="devicetypes-para">Умные часы</p>
-      </a>      
-      </li>
-      <li class="device-types__link"> 
-      <a href="#">
-        <div class="device-types__container">
-          <img src="img/svg/popular-6.svg" alt="Квадрокоптеры">
-        </div> 
-        <p class="devicetypes-para">Квадрокоптеры</p>
-      </a>    
-      </li>
-    </ul>
+        <ul class="device-types">
+          <li class="device-types__link"> 
+            <a href="#">
+              <div class="device-types__container">
+                <img src="img/svg/popular-1.svg" alt="Виртуальная реальность">
+              </div> 
+              <p class="devicetypes-para">Виртуальная реальность</p>
+            </a>
+          </li>
+          <li class="device-types__link"> 
+            <a href="catalog.html">
+              <div class="device-types__container_popular-2">
+                <img src="img/svg/popular-2.svg" alt="Моноподы для селфи">
+              </div> 
+              <p class="devicetypes-para">Моноподы для селфи</p>
+            </a>
+          </li>
+          <li class="device-types__link"> 
+            <a href="#">
+              <div class="device-types__container">
+                <img src="img/svg/popular-3.svg" alt="Экшн-камеры">
+              </div> 
+              <p class="devicetypes-para">Экшн-камеры</p>
+            </a>
+          </li>
+          <li class="device-types__link">   
+            <a href="#">
+              <div class="device-types__container">
+                <img src="img/svg/popular-4.svg" alt="Фитнес-браслеты">
+              </div> 
+              <p class="devicetypes-para">Фитнес-браслеты</p>
+            </a>      
+          </li>
+          <li class="device-types__link">  
+            <a href="#">
+              <div class="device-types__container">
+                <img src="img/svg/popular-5.svg" alt="Умные часы">
+              </div> 
+              <p class="devicetypes-para">Умные часы</p>
+            </a>      
+          </li>
+          <li class="device-types__link"> 
+            <a href="#">
+              <div class="device-types__container">
+                <img src="img/svg/popular-6.svg" alt="Квадрокоптеры">
+              </div> 
+              <p class="devicetypes-para">Квадрокоптеры</p>
+            </a>    
+          </li>
+        </ul>
+      </div>
     </section>
     </div>
-
     <div class="gray-bg">
       <section class="advantages">
       <div class="vertical_line"> 
@@ -305,51 +301,45 @@
             </li>
           </ul>
         </div>
-
-        <ul class="advantages-slider-list">
-
-          <li class="advantages-slider-item">
-            <section class="advantages__point slider__slide">
-              <div class="advantages__inner-delivery">
-                <div class="advantages__info info-text">
+          <ul class="advantages-slider-list">
+            <li class="advantages-slider-item">
+              <section class="advantages__point slider__slide">
+                <div class="advantages__inner-delivery">
+                  <div class="advantages__info info-text">
                   <h3 class="main-title_advantages">Доставка</h3>
-                  <p
-                  class="main-para advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-                  </p>
-                </div>
-              </div>
-            </section>
-          </li> 
-          
-          <li class="advantages-slider-item">
-            <section class="advantages__point slider__slide">
-              <div class="advantages__inner-warranty">
-                <div class="advantages__info info-text">
-                  <h3 class="main-title_advantages">Гарантия</h3>
                     <p
-                    class="main-para advantages__para">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                    class="main-para advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                     </p>
+                  </div>
                 </div>
-              </div>
-            </section>
-           </li>
-           
-          <li class="advantages-slider-item">  
-            <section class="advantages__point slider__slide">
-              <div class="advantages__inner-credit">
-                <div class="advantages__info info-text">
-                  <h3 class="main-title_advantages">Кредит</h3>
-                  <p
-                  class="main-para advantages__para">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-                  </p>
+              </section>
+            </li> 
+            <li class="advantages-slider-item">
+              <section class="advantages__point slider__slide">
+                <div class="advantages__inner-warranty">
+                  <div class="advantages__info info-text">
+                    <h3 class="main-title_advantages">Гарантия</h3>
+                      <p
+                      class="main-para advantages__para">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                      </p>
+                  </div>
                 </div>
-              </div>
-            </section>
-          </li>
-
-        </ul>
-            
-      </div>  
+              </section>
+            </li>
+            <li class="advantages-slider-item">  
+              <section class="advantages__point slider__slide">
+                <div class="advantages__inner-credit">
+                  <div class="advantages__info info-text">
+                    <h3 class="main-title_advantages">Кредит</h3>
+                    <p
+                    class="main-para advantages__para">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </li>
+          </ul>
+        </div>  
       </section>
     </div>
     <div class="partners container page-center">

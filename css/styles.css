@@ -459,7 +459,7 @@ ul {
 
 .hero__facts-col {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     position: relative;
     margin-right: 78px;
 }
@@ -1282,6 +1282,10 @@ margin-left: 14px;
 .paginator__item {
   margin: 25px;
   color: rgba(0,0,0,0.3);
+}
+
+.paginator__item a {
+  color: red;
 }
 
 .paginator__item--outer, .paginator__item--active {
