@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
@@ -8,18 +7,18 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
-  <header class="main-header">    
-    <nav>
-<h1 class="visually-hidden">HTML Academy: Девайс
-          </h1>
-        <div class="logo__headerposition main-title logo">
-          
-            <a href="#">
-              <img src="img/svg/logo.svg" alt="DEVICE">
-            </a>       
-          </div>      
-
-        <div class="header-container">
+  <header class="main-header">
+    <div class="first-row">
+      <h1 class="visually-hidden">HTML Academy: Девайс
+      </h1>
+    </div>
+    <p class="logo logo__headerposition">
+      <a href="#">
+        <img src="img/svg/logo.svg" alt="DEVICE">
+      </a>       
+    </p>
+      <nav class="main-header__nav">  
+        <div class="header-container main-text">
           <div class="search_block">
             <form action="#" method="get" class="search main-header__column">
               <input type="text" placeholder="Поиск по сайту" id="search_item" name="search" class="search-input visually-hidden">
@@ -29,7 +28,7 @@
             </form>
           </div>
           <div class="right-column">  
-            <ul class="main-header__user-list main-header__column hr">
+            <ul class="main-header__user-list">
               <li class="main-header__user-item user-item__user">
                 <a class="icon-link main-header__link user-is-logged-out" href="#">
                   Войти
@@ -50,10 +49,9 @@
             </ul>
           </div>
         </div>
-
-        <div class="main-header__row main-header__row-relative">
+        <div class="main-header__row">
           <ul class="main-header__main-list main-header__left-column2">
-            <li class="main-catalog-position">
+            <li class="header-catalog__position">
               <a href="#" class="main-header__main-item catalog-opener">
                 Каталог товаров 
               </a>
@@ -102,7 +100,6 @@
           </ul>
         </div>
       </nav>
-
   </header>
   <main>
     <section class="heroes slider style_body">
@@ -129,7 +126,7 @@
             Делай селфи,<br> 
             как Бен Стиллер!
           </p>
-          <p class="main-para hero_para">
+          <p class="main-para hero_para info-text">
             Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
           <div class="hero_button-container">
@@ -164,7 +161,7 @@
         <section class="hero__block hero__block--description">
           <h4 class="main-title hero__title decoline decoline--white-long">Худеем <br> правильно!
           </h4>
-          <p class="main-para hero__para">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+          <p class="main-para hero__para info-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
           <div class="hero__button-container">
             <a href="#" class="btn">Подробнее</a>
@@ -191,7 +188,7 @@
           <h4 class="main-title hero__title-title decoline decoline--white-long">Порхает как бабочка, <br>
           жалит как пчела!
           </h4>
-          <p class="main-para hero__para">
+          <p class="main-para hero__para info-text">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
           <div class="hero__button-container">
@@ -365,16 +362,11 @@
         </li>
       </ul>
     </div>
-
-
-
     <div class="brief-info-container">
-    
     <ul class="brief-info__blocks">
     <li class="brief-info__block">  
       <div>
         <h2 class="main-title brief-info__main-title decoline decoline--black">О нас</h2>
-
         <div class="briefinfo-about-us info-text">
           <p class="main-para brief-info__para">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
@@ -382,7 +374,6 @@
           class="main-para main-para--brief-info">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
         </div>
-
         <ul class="custom-list-white-circles brief-info__list">
           <li class="custom-list-white-circles-item">
             Деловые Линии
@@ -396,7 +387,6 @@
         </ul>
       </div> 
   </li>
-
   <li class="brief-info__block">
     <div>
     <div>
@@ -408,7 +398,6 @@
  </div>
   </li>  
   </ul>
-
     <div class="brief-info__buttons">
       <div class="brief-info__buttons-part">
         <div class="brief-info__btn-container">
@@ -421,10 +410,8 @@
         </div>
       </div>
     </div>
-   
   </div>
   </main>
-
   <footer>
     <div class="main-footer">
       <div class="footer-center"> 
@@ -504,8 +491,6 @@
     </div>  
   </div>
   </footer>
-
-
   <div class="popup-map hidden">
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.482165223512!2d37.52813139297608!3d55.687642925012305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504602285796"
@@ -516,9 +501,6 @@
       Скрыть
     </button>
   </div>
-
-
-
   <form action="post" class="popup-form hidden">
     <fieldset class="popup-form__field">
       <legend class="visually-hidden">Форма обратной связи</legend>
