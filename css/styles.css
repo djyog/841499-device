@@ -185,14 +185,25 @@ ul {
     padding-left: 25px;
 }
 
+.user-item__compare, .user-item__cart, .user-item__cart-orange {
+  margin-left: auto;
+}
+
+.user-item__cart {
+  margin-left: auto;
+}
+
+
+
 .user-item__user, .user-item__user-orange {
+    border: 0;
     position: relative;
     padding-left: 25px;
 }
 
 
 .main-header__user-list li:not(:last-child) {
-    margin-right: 40px;
+    margin-right: 5px;
 } 
 
 .user-item__user::before {
@@ -1304,3 +1315,9 @@ margin-left: 14px;
   color: red;
 }
 
+/** ********* Форма обратной связи.********** *//
+
+.contact {
+  max-width: 960px;
+  margin: 0 auto;
+}
