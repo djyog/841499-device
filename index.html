@@ -102,7 +102,7 @@
       </nav>
   </header>
   <main>
-    <section class="heroes slider style_body">
+    <section class="main-container">
       <h2 class="visually-hidden">Избранные товары</h2>
       <div class="container-products">
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -129,7 +129,7 @@
           <p class="main-para hero_para info-text">
             Самая длинная палка для селфи доступна в нашем магазине. <br> Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
-          <div class="hero_button-container">
+          <div class="hero__button-container">
             <a href="#" class="btn">Подробнее</a>
           </div>
           <div class="hero__facts">          
@@ -221,8 +221,8 @@
       </div>
     </div>
     </section>
-    <div class="main_container">
-    <section class="container">
+    
+    <section class="main-container">
       <h2 class="visually-hidden">Категории устройств</h2>
       <div class="device-column">
         <ul class="device-types">
@@ -277,28 +277,39 @@
         </ul>
       </div>
     </section>
-    </div>
-    <div class="gray-bg">
-      <section class="advantages">
+  
+    <section class="services">
+      <h2 class="visually-hidden">Сервисы</h2>
+      <div class="main-container">
       <div class="vertical_line"> 
       </div>
       <div class="advantages-slider-container">
         <h2 class="visually-hidden">С нами выгодно!</h2>
-        <input type="radio" name="advantage" value="1" id="advantage_delivery" class="btn advantages__btn advantages__btn--active visually-hidden" checked>
-        <input type="radio" name="advantage" value="2" id="advantage_warranty" class="btn advantages__btn visually-hidden">
-        <input type="radio" name="advantage" value="3" id="advantage_credit" class="btn advantages__btn visually-hidden">
-        <div class="advantages__buttons slider__buttons">
-          <ul class="advantages__btn-container">
+        <input type="radio" name="advantage" value="1" id="advantage_delivery" class="visually-hidden" checked>
+        <input type="radio" name="advantage" value="2" id="advantage_warranty" class="visually-hidden">
+        <input type="radio" name="advantage" value="3" id="advantage_credit" class="visually-hidden">
+        <div class="services__buttons">
+          <ul>
             <li> 
-              <label for="advantage_delivery" class="filter__label filter__label--1">Доставка</label>
+              <div class="hero__button-container2">
+              <label for="advantage_delivery" class="btn">Доставка</label>
+              </div>
             </li>
+
+
             <li> 
-              <label for="advantage_warranty" class="filter__label filter__label--2">Гарантия</label>
+             <div class="hero__button-container2">
+              <label for="advantage_warranty" class="btn">Гарантия</label>
+              </div>
             </li>
+
             <li> 
-              <label for="advantage_credit" class="filter__label filter__label--3">Кредит</label>
+            <div class="hero__button-container2">
+              <label for="advantage_credit" class="btn">Кредит</label>
+              </div>
             </li>
-          </ul>
+          </ul> 
+
         </div>
           <ul class="advantages-slider-list">
             <li class="advantages-slider-item">
@@ -339,9 +350,10 @@
             </li>
           </ul>
         </div>  
-      </section>
-    </div>
-    <div class="partners container page-center">
+      </div>
+    </section>
+
+    <section class="main-container">
       <h2 class="visually-hidden">Бренды наших товаров</h2>
       <ul class="partners__list font-none">
         <li class="partners__item-dji">
@@ -361,12 +373,14 @@
           </a>
         </li>
       </ul>
-    </div>
-    <div class="brief-info-container">
+    </section>
+
+    <section class="main-container">
+    <h2 class="visually-hidden"> Мы и наши партнеры </h2>
     <ul class="brief-info__blocks">
     <li class="brief-info__block">  
       <div>
-        <h2 class="main-title brief-info__main-title decoline decoline--black">О нас</h2>
+        <h3 class="main-title brief-info__main-title decoline decoline--black">О нас</h3>
         <div class="briefinfo-about-us info-text">
           <p class="main-para brief-info__para">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
@@ -374,6 +388,7 @@
           class="main-para main-para--brief-info">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
         </div>
+        <h3 class="visually-hidden">Наши партнеры</h3>
         <ul class="custom-list-white-circles brief-info__list">
           <li class="custom-list-white-circles-item">
             Деловые Линии
@@ -390,7 +405,7 @@
   <li class="brief-info__block">
     <div>
     <div>
-      <h2 class="main-title brief-info__main-title decoline">Контакты</h2>
+      <h3 class="main-title brief-info__main-title decoline">Контакты</h3>
       <p class="main-para brief-info__para info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       </p>
       <img src="img/cont/map.jpg" alt="Карта">
@@ -410,12 +425,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
   </main>
   <footer>
     <div class="main-footer">
       <div class="footer-center"> 
-        <div class="container">
+    
           <p class="main-title logo font-none">  
             <a href="#"> <img src="img/svg/logo-orange.svg" alt="DEVICE"> DEVICE </a>
           </p>
@@ -439,7 +454,7 @@
               </li>
             </ul>
           </div>
-        </div>
+       
       </div>
       <div class="main-footer__main-menu main-footer__row">
         <p class="main-footer__column main-footer__column--short info-text-white">г. Москва, ул. Строителей,  15</p>
@@ -501,30 +516,52 @@
       Скрыть
     </button>
   </div>
+
 <div class="contact">
-  <form action="post" class="popup-form hidden">
-    <fieldset class="popup-form__field">
-      <legend class="visually-hidden">Форма обратной связи</legend>
+  <div class="form__modal-close">
+  </div>  
+  <form action="post">
+    <fieldset>
+    <legend class="visually-hidden">Форма обратной связи</legend>
+      <div class="popup-form__field">
+      
+      <div class="popup-form__part send-item">
+        <div class="popup-form__title-container"> Ваше имя:
+        </div>
+        <div> Ваш e-mail:
+        </div>
+      </div>  
+
       <div class="popup-form__part">
         <div class="popup-form__input-container">
-          <label for="username">Ваше имя:</label>
-          <input type="text" class="custom-input" name="username" id="username" placeholder="Имя Фамилия">
+          <label for="username" class="visually-hidden">Ваше имя:</label>
+          <input type="text" class="custom-input send-text" name="username" id="username" placeholder="Имя Фамилия">
         </div>
         <div class="popup-form__input-container">
-          <label for="user_email">Ваш e-mail:</label>
-          <input type="email" class="custom-input" name="user_email" id="user_email" placeholder="email@example.com" required>
+          <label for="user_email" class="visually-hidden">Ваш e-mail:</label>
+          <input type="email" class="custom-input send-text" name="user_email" id="user_email" placeholder="email@example.com" required>
         </div>
       </div>
+
+      <div class="popup-form__part send-item">
+        <div class="popup-form__title-container">Текст письма:
+        </div>
+      </div>  
+
+
       <div class="popup-form__part popup-form__part--for-mail">
         <div class="popup-form__input-container popup-form__input-container--for-textarea">
-          <label for="user_mailtext">Текст письма:</label>
+          <label for="user_mailtext" class="visually-hidden">Текст письма:</label>
           <textarea name="user_mailtext" class="custom-input popup-form__textarea" id="user_mailtext" placeholder="В свободной форме">
           </textarea>
         </div>
-        <div class="popup-form__btn-container">
-          <button type="submit" class="btn">Отправить</button>
-        </div>
       </div>
+    <div class="popup-form__btn-container">
+      <button type="submit" class="btn">Отправить</button>
+    </div>
+
+    </div>
+  
     </fieldset>
     <button type="button" class="visually-hidden modal-close-btn modal-close-btn--write-us">
       Скрыть
