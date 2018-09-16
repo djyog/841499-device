@@ -7,6 +7,115 @@
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
+
+
+
+
+ <header class="main-header__catalog">
+    <h1 class="visually-hidden">HTML Academy: Девайс - Моноподы для селфи
+    </h1>
+    <p class="logo logo__headerposition">
+      <a href="index.html">
+        <img src="img/svg/logo.svg" alt="DEVICE">
+      </a>       
+    </p>
+      <nav class="main-header__nav">
+
+        <div class="header-container main-text">
+          <div class="search_block">
+            <form action="#" method="get" class="search main-header__column">
+              <input type="text" placeholder="Поиск по сайту" id="search_item" name="search" class="search-input">
+              <button type="submit" class="search__button">Найти</button>
+            </form>
+            <div class="search_ico"></div>
+          </div>
+          <div class="right-column">  
+            <ul class="main-header__user-list list-style">
+              <li class="user-is-logged-in main-header__user-item user-item__user">
+                <a class="icon-link main-header__link user-is-logged-in" href="#">
+                Валентин Петухов
+                </a>
+              </li>
+              <li class="main-header__user-item main-header__user-item--login">
+                <a class="icon-link main-header__link user-is-logged-in" href="#">
+                Выйти
+                </a>
+              </li>
+            </ul>   
+            <ul class="main-header__user-list-right list-style">
+              <li class="main-header__user-item-compare user-item__compare left-pad">
+                <a class="icon-link main-header__link user-is-logged-out" href="#">
+                  Сравнить
+                </a>
+              </li>
+              <li class="main-header__user-item user-item__cart left-pad">
+                <a href="#">
+                  Корзина
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-header__row">
+          <ul class="main-header__main-list main-header__left-column2 list-style">
+            <li class="header-catalog__position">
+              <a href="#" class="main-header__main-item catalog-opener">
+                Каталог товаров
+              </a>
+              <ul class="sub-menu">  
+                <li class="catalog-list">
+                  <ul class="catalog-list__category list-style">
+                    <li class="catalog-list__item">
+                      <a href="#">Виртуальная реальность</a>
+                    </li>
+                    <li class="catalog-list__item">
+                      <a href="catalog.html">
+                        Моноподы для селфи
+                      </a>
+                    </li>
+                    <li class="catalog-list__item">
+                      <a href="#">Экшн-камеры</a>
+                    </li>
+                  </ul>
+                  <ul class="catalog-list__category">
+                    <li class="catalog-list__item">
+                      <a href="#">Фитнес-браслеты</a>
+                    </li>
+                    <li class="catalog-list__item">
+                      <a href="#">Умные часы</a>
+                    </li>
+                  </ul>
+                  <ul class="catalog-list__category">
+                    <li class="catalog-list__item">
+                      <a href="#">Квадрокоптеры</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>  
+            </li>
+          </ul>
+          <ul class="main-header__main-list main-header__right-column2 list-style">
+            <li class="about-item">
+              <a href="#" class="main-header__main-item">Доставка</a>
+            </li>
+            <li class="about-item">
+              <a href="#" class="main-header__main-item">Гарантия</a>
+            </li>
+            <li class="about-item">
+              <a href="#" class="main-header__main-item right-position">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+
+
+
+
+
+<!--
+
   <header class="main-header">
     <div class="first-row">
       <h1 class="visually-hidden">HTML Academy: Девайс - Моноподы для селфи
@@ -107,118 +216,14 @@
       </nav>
   </header>
 
+-->
 
 
 
 
 
-
-
-
-
-<!--
-
- <header class="main-header">
-    <div class="main-container">
-     <h1 class="visually-hidden">HTML Academy: Девайс
-     </h1>
-     <p class="main-title logo logo__headerposition">
-        <a href="index.html">
-          <img src="img/svg/logo.svg" alt="DEVICE">
-        </a>       
-     </p>
-      <nav class="main-header__catalog">
-        <div class="header-container">
-          <div class="search_block">
-            <form action="#" method="get" class="search main-header__column">
-              <input type="text" placeholder="Поиск по сайту" id="search_item" name="search" class="search-input visually-hidden">
-              <label for="search_item">Поиск по сайту
-              </label>
-              <button type="submit" class="search__button visually-hidden">Найти</button>
-            </form>
-          </div>
-          <div class="right-column">  
-            <ul class="main-header__user-list main-header__column hr">
-              <li class="user-is-logged-in main-header__user-item user-item__user">
-                <a class="icon-link main-header__link user-is-logged-in" href="#">
-                Валентин Петухов
-                </a>
-              </li>
-              <li class="main-header__user-item">
-                <a class="icon-link main-header__link user-is-logged-in" href="#">
-                Выйти
-                </a>
-              </li>
-            </ul>  
-            <ul class="main-header__user-list">
-              <li class="main-header__user-item user-item__compare">
-                <a class="icon-link main-header__link user-is-logged-out" href="#">
-                  Сравнить
-                </a>
-              </li>
-              <li class="main-header__user-item user-item__cart">
-                <a href="#">
-                  Корзина
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="main-header__row main-header__row-relative">
-          <ul class="main-header__main-list main-header__left-column2">
-            <li>
-              <a href="#" class="main-header__main-item catalog-opener">
-                Каталог товаров 
-              </a>
-              <ul class="sub-menu">  
-                <li class="catalog-list">
-                  <ul class="catalog-list__category">
-                    <li class="catalog-list__item">
-                      <a href="#">Виртуальная реальность</a>
-                    </li>
-                    <li class="catalog-list__item">
-                      <a href="catalog.html">
-                        Моноподы для селфи
-                      </a>
-                    </li>
-                    <li class="catalog-list__item">
-                      <a href="#">Экшн-камеры</a>
-                    </li>
-                  </ul>
-                  <ul class="catalog-list__category">
-                    <li class="catalog-list__item">
-                      <a href="#">Фитнес-браслеты</a>
-                    </li>
-                    <li class="catalog-list__item">
-                      <a href="#">Умные часы</a>
-                    </li>
-                  </ul>
-                  <ul class="catalog-list__category">
-                    <li class="catalog-list__item">
-                      <a href="#">Квадрокоптеры</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>  
-            </li>
-          </ul>
-          <ul class="main-header__main-list main-header__right-column2">
-            <li class="about-item">
-              <a href="#" class="main-header__main-item">Доставка</a>
-            </li>
-            <li class="about-item">
-              <a href="#" class="main-header__main-item">Гарантия</a>
-            </li>
-            <li class="about-item">
-              <a href="#" class="main-header__main-item">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>  -->
 <main>
-  <div class="style_body">
+  <section class="container_catalog-title">
     <h1 class="main-title">Моноподы для селфи</h1>
     <div class="container-crumbs info-text">
       <ul class="crumbs__list">
@@ -239,7 +244,9 @@
         </li>
       </ul>
     </div>
-  </div>
+  </section>
+
+
   <div class="style_body">
     <div class="full-width catalog-row-1">
       <div class="catalog-container">
