@@ -115,20 +115,72 @@ a {
     margin-right: auto;
     margin-top: 40px;
     width: 1040px;
-    height: 186px;
+    height: 154px;
     padding-left: 60px;
     padding-right: 60px;
-    margin-bottom: 33px;
+    margin-bottom: 0px;
     background-color: #fff;
 }
 
+/* _________________ фон каталога ______________ */
 
-.first-row {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1160px;
-    height: 40px;
+.catalog-background {
+ background-image: linear-gradient(to right, #ccc, #ccc 30%, #ddd 30%, #ddd 100%);
 }
+
+.catalog-background2 {
+   background-image: linear-gradient(to right, #ddd, #ddd 30%, #fff 30%, #fff 100%);
+}
+
+body, h2 {
+  margin: 0;
+  padding: 0;
+}
+
+
+.catalog-center-container {
+  display: flex;
+  align-items: stretch;
+  margin: 0 auto;
+  width: 1160px;
+}
+  
+.catalog-filter {
+  width: 240px;
+  background-color: #ccc;    
+}
+
+.catalog-sort {
+  background-color: #ddd;
+}
+
+  
+.filter-inputs {
+
+  width: 240px;
+  background-color: #ddd;    
+}
+
+.results {
+    background-color: #fff;
+}
+
+.result-test {
+  height: 1000px;
+}
+
+
+/* ____________ конец стилей таблицы каталога __________ */
+
+
+
+
+
+
+
+
+
+
 
 .main-container {
     position: relative; 
@@ -271,14 +323,6 @@ a {
   background-color: #000;
 }
 
-
-
-
-
-
-
-
-
 .main-header__user-list {
     display: flex;
     width: 250px;
@@ -294,6 +338,19 @@ a {
     display: flex;
     width: 500px;
 }
+
+.right-column__footer {
+    display: flex;
+    width: 500px;
+    margin-left: auto;
+}
+
+.main-footer__column {
+    width: 360px;
+    height: 30px;
+}
+
+
 
 .left-pad {
     position: relative;
@@ -314,13 +371,10 @@ a {
   margin-left: 12px;
 }
 
-
-
 .user-item__user, .user-item__user-orange {
     position: relative;
     padding-left: 25px;
 }
-
 
 .main-header__user-list li:not(:last-child) {
     margin-right: 5px;
@@ -445,8 +499,9 @@ a {
 }
 
 .footer-center {
+  display: flex;      
   width: 1160px;
-  padding-top: 60px;
+  padding-top: 66px;
   margin: 0 auto;
 }
 
@@ -550,8 +605,7 @@ margin-bottom: 51px;
 .crumbs__list, 
 .sorting__list, 
 .sorting__triangles, 
-.color__list, 
-.paginator__list {
+.color__list {
     list-style: none;
     margin-left: 0;
 }
@@ -559,6 +613,27 @@ margin-bottom: 51px;
 .product-card__link,
 .product-card__name {		
     color: #000000;
+}
+
+.product-card__name {
+    width: 255px;
+    height: 22px;
+     font-family: 'Gilroy', 'Georgia', serif;
+    font-weight: 800;
+    font-size: 18px;
+    }
+
+.product-card__links {
+  position: absolute;
+  top: 165px;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin: 0;
+  margin-left: -100px;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .main-footer__main-list a {
@@ -784,7 +859,7 @@ li.device-types__link:active .devicetypes-para {
 }
 
 .secondary-title {
-    font-family: 'Gilroy', 'Georgia', serif;
+    font-family: 'Gilroy', , serif;
     font-weight: 800;
     font-size: 16px;
     line-height: 24px;
@@ -796,40 +871,26 @@ li.device-types__link:active .devicetypes-para {
     font-family: 'Gilroy', 'Georgia', serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 24px;
+    line-height: 18px;
     letter-spacing: 0.1em;
 }
 
-.product-card__name {
-    font-family: 'Gilroy', 'Georgia', serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24px;
-}
-
-
 .product-card__inner--new:after {
-  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Georgia', sans-serif;
   font-size: 14px;
   font-weight: 800;
   line-height: 60px;
-
   position: absolute;
-  top: 27px;
-  right: 26px;
-
+  top: 30px;
+  left: 270px;
   display: block;
-
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 60px;
   height: 60px;
-
   content: 'New';
   text-align: center;
   letter-spacing: .05em;
   text-transform: uppercase;
-
   opacity: .2;
   color: black;
   border: 2px solid black;
@@ -837,7 +898,81 @@ li.device-types__link:active .devicetypes-para {
 }
 
 
+.product-card__inner p {
+    opacity: 1;
+}
 
+/* PRODUCT CARD ANIMATION */
+
+.product-card__inner {
+  position: relative;
+  margin-bottom: 29px;
+}
+
+.product-card__links a {
+  transition: opacity 200ms;
+  opacity: 0;
+}
+
+.product-card__inner {
+  background: #eee;
+  background-clip: border-box;
+}
+
+.product-card__inner:hover .product-card__image {
+  opacity: .2;
+}
+
+.product-card__inner:hover ~ .product-card__inner p {
+  opacity: 1;
+}
+
+.product-card__inner:hover button,
+.product-card__inner:hover a,
+.product-card__link:hover,
+.product-card__link:focus {
+  opacity: 1;
+}
+
+.product-card__inner:hover .product-card__link--add {
+  opacity: .5;
+}
+
+.product-card__link.product-card__link--add:hover {
+  opacity: 1;
+}
+
+.product-card__link.product-card__link--add:active {
+  opacity: .02;
+}
+
+.product-card__link--add {
+  font-family: inherit;
+  font-size: 13px;
+  line-height: 36px;
+  transition: opacity 200ms;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: .01em;
+  opacity: .5;
+  color: inherit;
+  border: none;
+  background: none;
+}
+
+.product-card__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.product-card__info a {
+  text-decoration: none;
+}
+
+
+/* FILTER */
 
 .filter__label	{
     font-size: 18px;
@@ -855,8 +990,24 @@ li.device-types__link:active .devicetypes-para {
 .product-card__price {
     font-family: 'Gilroy', 'Georgia', serif;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 16px;
+    margin-top: 4px;
+    width: 103px;
+    height: 22px;
+    text-align: right;
     color: #464646;
+}
+
+.pad-none {
+    padding: 0;
+    line-height: 16px;
+}
+
+.product-card__info {
+    display: flex;
+    align-items: stretch;
+    height: 22px;
+    width: 360px;
 }
 
 .crumbs-item,
@@ -1351,7 +1502,9 @@ li.device-types__link:active .devicetypes-para {
 
 .main-footer__row {
   display: flex;
+  position: relative;
   width: 1160px;
+  height: 35px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1359,7 +1512,7 @@ li.device-types__link:active .devicetypes-para {
 .main-footer__main-list {
   display: flex;
   width: 440px;
-  margin-left: 160px;
+  margin-left: 16px;
   margin-top: 20px; 
 }
 
@@ -1369,6 +1522,15 @@ li.device-types__link:active .devicetypes-para {
 
 .main-footer__text {
   margin-left: 168px;
+}
+
+.decoline-orange {
+    position: absolute;
+    top: 88px;
+    left: 0;
+    width: 80px;
+    height: 7px;
+    background-color: #ffc600;
 }
 
 .socials {
@@ -1384,9 +1546,9 @@ li.device-types__link:active .devicetypes-para {
 }
 
 .logo-academy {
-  position: relative;
-  top: 60px;
-  right: 30px;
+  position: absolute;
+  top: -33px;
+  left: 1132px;
 }
 
 .container-crumbs {
@@ -1424,38 +1586,72 @@ margin-left: 14px;
 }
 
 .catalog-left-column {
-  width: 266px;
+  width: 290px;
   background-color: #ccc;
   padding-left: 60px;
-  padding-top: 10px;
+    padding-top: 24px;
+  padding-bottom: 24px;
+   height: 22px;
 }
 
 .catalog-right-column {
+    display: flex;
+    align-items: stretch;
   background-color: #eee;
   padding-left: 75px;
-  padding-top: 10px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 833px;
+    height: 1500px;
+  height: 22px;
 }
 
 .catalog-left-column-2 {
-  width: 266px;
+  width: 290px;
   background-color: #eee;
   padding-left: 60px;
   padding-top: 10px;
 }
 
 .catalog-right-column-2 {
-  width: 300px;
+  width: 833px;
+  height: 1220px;
   background-color: #fff;
   padding-left: 75px;
   padding-top: 10px;
 }
 
+.sorting, .sorting__triangles {
+    display: flex;
+    position: relative;
+}
+
+.sorting-triangle__up {
+    position: absolute;
+    top: -7px;
+    left: 188px;
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/svg/icon-up-dir.svg");
+}
+
+.sorting-triangle__down {
+    position: absolute;
+    top: -7px;
+    left: 218px;
+    width: 11px;
+    height: 10px;
+    background-image: url("../img/svg/icon-down-dir.svg");
+    opacity: 1; 
+}
+
 .sorting__list {
-  position: relative;
+  
   display: flex;
-  width: 600px;
-  left: 200px;
-  bottom: 34px;
+  width: 350px;
+  padding-left: 30px;
+  padding-top: 3px;
+
 }
 
 .sorting__item {
@@ -1473,49 +1669,105 @@ margin-left: 14px;
 .first-line-cards, .second-line-cards {
   display: flex;
   position: relative;
-  width: 400px;
-  height: 600px;
+  width: 360px;
+  height: 515px;
 }
 
-.product-card {
+.first-line-cards {
+    margin-top: 40px;
+}
+
+.product-card-1 {
   margin-right: 40px;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
+.product-card-2 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 
+.shop-inner {
+    width: 760px;
+    margin: 0;
+    margin-bottom: 29px;
+    padding: 0;
+}
 
-.paginator, .paginator__list {
+/* PAGINATOR */
+
+.paginator {
   display: flex;
   width: 760px;
-  height: 70px;
-  font-family: "Gilroy", 'Georgia', serif;
-  font-weight: 800;
-  font-size: 16px;
-  color: rgba(255,0,0,0.3);;
-  text-transform: uppercase;
-  font-weight: 800;
-  background-color: #eee;
+  margin-top: -12px;
+  margin-bottom: 75px;
+  background-color: #ebebeb;
+  flex-wrap: wrap;
+}
+
+.paginator__list {
+  display: flex;
+  width: 440px;
+  margin: 0 auto;
+  padding: 0;
+  padding-left: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .paginator__item {
-  margin: 25px;
-  color: rgba(0,0,0,0.3);
+  list-style-type: none;
+}
+
+.paginator__item--outer:first-of-type {
+  margin-right: auto;
+}
+
+.paginator__item--outer:last-of-type {
+  margin-left: auto;
 }
 
 .paginator__item a {
-  color: black;
+  font-family: 'Gilroy', 'Georgia', sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  display: inline-block;
+  padding: 22px 14px 17px;
+  transition: opacity 200ms;
+  vertical-align: baseline;
+  text-decoration: none;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  opacity: .3;
 }
 
-.paginator__item--outer, .paginator__item--active {
-  font-weight: 800;
-  color: rgba(150,0,0,1);
+
+.paginator__item--active a,
+.paginator__item--outer a {
+  opacity: 1;
 }
 
-.paginator__item:nth-child(3n+1) {
-  margin-right: 200px;
-  color: red;
+.paginator__item--outer a {
+  display: inline-block;
+
+  margin: 0;
+  padding: 22px 29px 18px;
+  transition: background-color 200ms;
+  vertical-align: baseline;
 }
+
+.paginator__item--outer:hover,
+.paginator__item--outer:focus,
+.paginator__item--outer:active {
+  background-color: #d9d9d9;
+}
+
+.paginator__item--outer:active a {
+  opacity: .3;
+}
+
 
 /* ********* Форма обратной связи.********** */
 
@@ -1583,7 +1835,6 @@ fieldset {
     margin-bottom: 13px;
 }
 
-
 .popup-form__textarea {
     width: 760px;
     height: 156px;
@@ -1596,10 +1847,6 @@ fieldset {
     margin-top: -25px;
     text-align: center;
 }
-
-
-
-
 
 /*-- Кнопка --*/
 
@@ -1615,28 +1862,21 @@ fieldset {
 }
 
 .btn {
-  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Georgia', sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 24px;
-
   position: relative;
   z-index: 0;
-
   display: block;
-
   width: 100%;
   padding: 5% 0;
-
   cursor: pointer;
-  -webkit-transition: color 100ms;
-  -o-transition: color 100ms;
   transition: color 100ms;
   text-align: center;
   text-decoration: none;
   letter-spacing: .2em;
   text-transform: uppercase;
-
   color: #000;
   border: none;
   background: none;
@@ -1651,15 +1891,10 @@ fieldset {
   z-index: -1;
   top: 42%;
   left: 0;
-
   width: 100%;
   height: 14%;
-
   content: '';
-  -webkit-transition: all 200ms;
-  -o-transition: all 200ms;
   transition: all 200ms;
-
   background-color: #f0c52e;
 }
 
@@ -1673,46 +1908,6 @@ fieldset {
   height: 100%;
 }
 
-
 .services__buttons {
     margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/**
-
-.button {
-    position: relative;
-}
-
-.button::after {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: yellow;
-    transform: scaleY(0.2);
-    transition: 0.3s transform ease-in-out;
-}
-
-.button:hover::after {
-    transform: scaleY(1);
-}
-
-
-input:checked + label::before {
-
-} */
