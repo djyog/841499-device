@@ -26,14 +26,14 @@
             <div class="search_ico"></div>
           </div>
           <div class="right-column">  
-            <ul class="main-header__user-list list-style">
+            <ul class="main-header__user-list list-none">
               <li class="main-header__user-item user-item__user left-pad">
                 <a class="icon-link main-header__link user-is-logged-out" href="#">
                   Войти
                 </a>
               </li>
             </ul>  
-            <ul class="main-header__user-list-right list-style">
+            <ul class="main-header__user-list-right list-none">
               <li class="main-header__user-item-compare user-item__compare left-pad">
                 <a class="icon-link main-header__link user-is-logged-out" href="#">
                   Сравнить
@@ -48,14 +48,14 @@
           </div>
         </div>
         <div class="main-header__row">
-          <ul class="main-header__main-list main-header__left-column2 list-style">
+          <ul class="main-header__main-list main-header__left-column2 list-none">
             <li class="header-catalog__position">
               <a href="#" class="main-header__main-item catalog-opener">
                 Каталог товаров
               </a>
               <ul class="sub-menu">  
                 <li class="catalog-list">
-                  <ul class="catalog-list__category list-style">
+                  <ul class="catalog-list__category list-none">
                     <li class="catalog-list__item">
                       <a href="#">Виртуальная реальность</a>
                     </li>
@@ -85,7 +85,7 @@
               </ul>  
             </li>
           </ul>
-          <ul class="main-header__main-list main-header__right-column2 list-style">
+          <ul class="main-header__main-list main-header__right-column2 list-none">
             <li class="about-item">
               <a href="#" class="main-header__main-item">Доставка</a>
             </li>
@@ -111,7 +111,7 @@
           <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
           <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
-        <ul class="slider-list list-style">
+        <ul class="slider-list list-none">
         <li class="slider-item">
         <div class="hero slider__slide_1 slider__slide--active">
           <div class="product_number"> 01 
@@ -126,7 +126,7 @@
           </p>
           <div class="decoline--white-long">
           </div>
-          <p class="main-para hero_para info-text">
+          <p class="hero_para info-text">
             Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
           </p>
           <div class="hero__button-container">
@@ -163,7 +163,7 @@
           </h4>
           <div class="decoline--white-long">
           </div>
-          <p class="main-para hero__para info-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
+          <p class="hero__para info-text">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
           </p>
           <div class="hero__button-container">
             <a href="#" class="btn">Подробнее</a>
@@ -192,7 +192,7 @@
           </h4>
           <div class="decoline--white-long">
           </div>
-          <p class="main-para hero__para info-text">
+          <p class="hero__para info-text">
             Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
           </p>
           <div class="hero__button-container">
@@ -232,48 +232,42 @@
         <ul class="device-types">
           <li class="device-types__link"> 
             <a href="#">
-              <div class="device-types__container">
-                <img src="img/svg/popular-1.svg" alt="Виртуальная реальность">
+              <div class="device-1">
               </div> 
               <p class="devicetypes-para">Виртуальная реальность</p>
             </a>
           </li>
           <li class="device-types__link"> 
             <a href="catalog.html">
-              <div class="device-types__container_popular-2">
-                <img src="img/svg/popular-2.svg" alt="Моноподы для селфи">
+              <div class="device-2">
               </div> 
               <p class="devicetypes-para">Моноподы для селфи</p>
             </a>
           </li>
           <li class="device-types__link"> 
             <a href="#">
-              <div class="device-types__container">
-                <img src="img/svg/popular-3.svg" alt="Экшн-камеры">
+              <div class="device-3">
               </div> 
               <p class="devicetypes-para">Экшн-камеры</p>
             </a>
           </li>
           <li class="device-types__link">   
             <a href="#">
-              <div class="device-types__container">
-                <img src="img/svg/popular-4.svg" alt="Фитнес-браслеты">
+              <div class="device-4">
               </div> 
               <p class="devicetypes-para">Фитнес-браслеты</p>
             </a>      
           </li>
           <li class="device-types__link">  
             <a href="#">
-              <div class="device-types__container">
-                <img src="img/svg/popular-5.svg" alt="Умные часы">
+              <div class="device-5">
               </div> 
               <p class="devicetypes-para">Умные часы</p>
             </a>      
           </li>
           <li class="device-types__link"> 
             <a href="#">
-              <div class="device-types__container">
-                <img src="img/svg/popular-6.svg" alt="Квадрокоптеры">
+              <div class="device-6">
               </div> 
               <p class="devicetypes-para">Квадрокоптеры</p>
             </a>    
@@ -281,19 +275,28 @@
         </ul>
       </div>
     </section>
-  
+
+
+
+
+
+
+
+
+
+
     <section class="services">
       <h2 class="visually-hidden">Сервисы</h2>
-      <div class="main-container">
-      <div class="vertical_line"> 
-      </div>
-      <div class="advantages-slider-container">
+      <div class="main-container services__flex-it">
+      	<div class="vertical_line"> 
+      	</div>
         <h2 class="visually-hidden">С нами выгодно!</h2>
         <input type="radio" name="advantage" value="1" id="advantage_delivery" class="visually-hidden" checked>
         <input type="radio" name="advantage" value="2" id="advantage_warranty" class="visually-hidden">
         <input type="radio" name="advantage" value="3" id="advantage_credit" class="visually-hidden">
-        <div class="services__buttons">
-          <ul class="list-style">
+     
+ 			
+          <ul class="advant-1 list-none">
             <li> 
               <div class="hero__button-container2">
               <label for="advantage_delivery" class="btn advantages__btn advantages__btn--active">Доставка</label>
@@ -313,49 +316,49 @@
               </div>
             </li>
           </ul> 
+     
 
-        </div>
-          <ul class="advantages-slider-list">
+       
+          <ul class="advantages-slider-list list-none">
             <li class="advantages-slider-item">
-              <section class="advantages__point slider__slide">
+              <section class="slider__slide">
                 <div class="advantages__inner-delivery">
-                  <div class="advantages__info info-text">
+                </div>
+                <div class="advantages__info info-text">
                   <h3 class="main-title_advantages">Доставка</h3>
-                    <p
-                    class="main-para advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+                    <p class="advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
                     </p>
-                  </div>
                 </div>
               </section>
             </li> 
             <li class="advantages-slider-item">
-              <section class="advantages__point slider__slide">
+              <section class="slider__slide">
                 <div class="advantages__inner-warranty">
-                  <div class="advantages__info info-text">
-                    <h3 class="main-title_advantages">Гарантия</h3>
-                      <p
-                      class="main-para advantages__para">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-                      </p>
-                  </div>
                 </div>
+                <div class="advantages__info info-text">
+                  <h3 class="main-title_advantages">Гарантия</h3>
+                    <p class="advantages__para">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+                    </p>
+                </div>  
               </section>
             </li>
             <li class="advantages-slider-item">  
-              <section class="advantages__point slider__slide">
+              <section class="slider__slide">
                 <div class="advantages__inner-credit">
+               	</div>
                   <div class="advantages__info info-text">
                     <h3 class="main-title_advantages">Кредит</h3>
-                    <p
-                    class="main-para advantages__para">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+                    <p class="advantages__para">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
                     </p>
                   </div>
-                </div>
               </section>
             </li>
-          </ul>
-        </div>  
-      </div>
+          </ul> 
+      
+      </div>   
     </section>
+
+
 
     <section class="main-container">
       <h2 class="visually-hidden">Бренды наших товаров</h2>
@@ -380,19 +383,21 @@
     </section>
 
     <section class="main-container">
-    <h2 class="visually-hidden"> Мы и наши партнеры </h2>
-    <ul class="brief-info__blocks">
-    <li class="brief-info__block">  
-      <div>
-        <h3 class="main-title brief-info__main-title decoline--black">О нас</h3>
-        <div class="briefinfo-about-us info-text">
-          <p class="main-para brief-info__para">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+      <h2 class="visually-hidden"> Мы и наши партнеры </h2>
+      <div class="main-container brief-info__flex-it">
+        <section class="brief-info__left-column">
+        <h3 class="main-title brief-info__main-title">О нас</h3>
+        <div class="brief-info__deco-line"> 
+      	</div>
+        <div class="info-text">
+          <p class="brief-info__para">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
           <p
-          class="main-para main-para--brief-info">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+          class="brief-info__para">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
         </div>
-        <h3 class="visually-hidden">Наши партнеры</h3>
+      
+         <h3 class="visually-hidden">Наши партнеры</h3>
         <ul class="custom-list-white-circles brief-info__list">
           <li class="custom-list-white-circles-item">
             Деловые Линии
@@ -404,32 +409,25 @@
             ЖелДорЭкспедиция
           </li>
         </ul>
-      </div> 
-  </li>
-  <li class="brief-info__block">
-    <div>
-    <div>
-      <h3 class="main-title brief-info__main-title">Контакты</h3>
-      <p class="main-para brief-info__para info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-      </p>
-      <img src="img/cont/map.jpg" alt="Карта">
-    </div>
- </div>
-  </li>  
-  </ul>
-    <div class="brief-info__buttons">
-      <div class="brief-info__buttons-part">
-        <div class="brief-info__btn-container">
-          <a href="#" class="btn">Подробнее о нас</a>
-        </div>
-      </div>
-      <div class="brief-info__buttons-part">
-        <div class="brief-info__btn-container">
-          <a href="writeus.html" class="btn btn-toggle-write-us">Напишите нам</a>
-        </div>
-      </div>
-    </div>
-  </section>
+ 		<div class="brief-info__btn-container">
+        	<a href="#" class="btn">Подробнее о нас</a>
+        </div> 
+        </section>
+
+        <section class="brief-info__right-column">
+         	<h3 class="main-title brief-info__main-title decoline--black"> Контакты </h3>
+		  	<div class="brief-info__deco-line"> 
+      		</div>
+ 			<p class="brief-info__para info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+      		</p>
+			<img src="img/cont/map.jpg" alt="Карта" class="map-position">		
+		 	<div class="brief-info__btn-container">
+          		<a href="writeus.html" class="btn btn-toggle-write-us">Напишите нам</a>
+        	</div>
+        </section> 
+      </div>   
+    </section>
+  
   </main>
   <footer>
     <div class="main-footer">
@@ -438,14 +436,14 @@
             <a href="#"> <img src="img/svg/logo-orange.svg" alt="DEVICE"> DEVICE </a>
           </p>
           <div class="right-column__footer">  
-            <ul class="main-header__user-list list-style">
+            <ul class="main-header__user-list list-none">
               <li class="main-header__user-item user-item__user-orange">
                 <a class="icon-link main-header__link user-is-logged-out info-text-white" href="#">
                   Войти
                 </a>
               </li>
             </ul>  
-            <ul class="main-header__user-list-right list-style">
+            <ul class="main-header__user-list-right list-none">
               <li class="main-header__user-item-compare user-item__compare-orange left-pad">
                 <a class="icon-link main-header__link info-text-white user-is-logged-out" href="#">
                   Сравнить
@@ -509,6 +507,7 @@
       </div>
     </div>  
   </div>
+</div>
   </footer>
   <div class="popup-map hidden">
     <iframe
