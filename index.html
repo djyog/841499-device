@@ -100,8 +100,86 @@
       </nav>
   </header>
   <main>
+
+		<section class="main-container">
+      <h2 class="visually-hidden">Избранные товары</h2>
+      	
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
+
+    		<article class="product-1 heroes__flex-it">
+				<h3 class="visually-hidden"> Селфи-палка </h3>	
+          
+          <div class="product__image-column">
+						<img src="img/cont/slide_1.png" alt="Невероятно длинная селфи-палка" width="384" height="486"> 
+          </div>
+
+          <div class="product__description-column">
+          	<p class="main-title hero__title">
+            	Делай селфи,<br> 
+            	как Бен Стиллер!
+          	</p>
+          	<p class="hero_para info-text">
+            	Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+          	</p>
+          	<div class="hero__button-container">
+            	<a href="#" class="btn">Подробнее
+            	</a>
+          	</div>
+
+						<div class="hero__facts">          
+            	<dl class="hero__facts-col">
+              	<dt>Длина палки</dt>
+              	<dd>8,5 м</dd> 
+            	</dl>
+            	<dl class="hero__facts-col">
+              	<dt>Вес палки</dt> 
+              	<dd>5 кг</dd>
+            	</dl>          
+            	<dl class="hero__facts-col">
+             		<dt>Материал</dt>             
+              	<dd>Карбон</dd>
+            	</dl>
+          	</div>
+
+       			<div class="slider-controls">
+          		<label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          		<label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          		<label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
+        		</div>
+          </div>
+    		
+    		</article>
+    </section>		
+
+<!--
+    		<article class="product-2">
+    			<h3 class="main-title hero__title">
+    				Худеем правильно!
+          </h3>
+
+      
+    		</div>  
+
+    		<div class="product-3">
+
+      
+    		</div>
+  	  
+		</section>
+
+
+
+
+
+
+
+
     <section class="main-container">
       <h2 class="visually-hidden">Избранные товары</h2>
+
       <div class="container-products">
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
         <input class="visually-hidden" type="radio" id="product-2" name="toggle">
@@ -111,6 +189,7 @@
           <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
           <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
         </div>
+       
         <ul class="slider-list list-none">
         <li class="slider-item">
         <div class="hero slider__slide_1 slider__slide--active">
@@ -118,8 +197,9 @@
           </div> 
         <div class="hero__block hero__block--image">
         <img src="img/cont/slide_1.png" alt="Невероятно длинная селфи-палка" width="384" height="486">          
-        </div>
-        <div class="hero__block hero__block--description">
+      </div>
+
+      <div class="hero__block hero__block--description">
           <p class="main-title hero__title">
             Делай селфи,<br> 
             как Бен Стиллер!
@@ -224,49 +304,49 @@
         </button>
       </div>
     </div>
-    </section>
+    </section>    -->
     
     <section class="main-container">
       <h2 class="visually-hidden">Категории устройств</h2>
       <div class="device-column">
         <ul class="device-types">
-          <li class="device-types__link"> 
-            <a href="#">
+          <li class="list-none__device"> 
+            <a href="#" class="device-types__link">
               <div class="device-1">
               </div> 
               <p class="devicetypes-para">Виртуальная реальность</p>
             </a>
           </li>
-          <li class="device-types__link"> 
-            <a href="catalog.html">
+          <li class="list-none__device"> 
+            <a href="catalog.html" class="device-types__link">
               <div class="device-2">
               </div> 
               <p class="devicetypes-para">Моноподы для селфи</p>
             </a>
           </li>
-          <li class="device-types__link"> 
-            <a href="#">
+          <li class="list-none__device"> 
+            <a href="#" class="device-types__link">
               <div class="device-3">
               </div> 
               <p class="devicetypes-para">Экшн-камеры</p>
             </a>
           </li>
-          <li class="device-types__link">   
-            <a href="#">
+          <li class="list-none__device">   
+            <a href="#" class="device-types__link">
               <div class="device-4">
               </div> 
               <p class="devicetypes-para">Фитнес-браслеты</p>
             </a>      
           </li>
-          <li class="device-types__link">  
-            <a href="#">
+          <li class="list-none__device">  
+            <a href="#" class="device-types__link">
               <div class="device-5">
               </div> 
               <p class="devicetypes-para">Умные часы</p>
             </a>      
           </li>
-          <li class="device-types__link"> 
-            <a href="#">
+          <li class="list-none__device"> 
+            <a href="#" class="device-types__link">
               <div class="device-6">
               </div> 
               <p class="devicetypes-para">Квадрокоптеры</p>
@@ -276,117 +356,85 @@
       </div>
     </section>
 
-
-
-
-
-
-
-
-
-
     <section class="services">
       <h2 class="visually-hidden">Сервисы</h2>
       <div class="main-container services__flex-it">
       	<div class="vertical_line"> 
       	</div>
         <h2 class="visually-hidden">С нами выгодно!</h2>
-        <input type="radio" name="advantage" value="1" id="advantage_delivery" class="visually-hidden" checked>
-        <input type="radio" name="advantage" value="2" id="advantage_warranty" class="visually-hidden">
-        <input type="radio" name="advantage" value="3" id="advantage_credit" class="visually-hidden">
-     
- 			
-          <ul class="advant-1 list-none">
-            <li> 
-              <div class="hero__button-container2">
-              <label for="advantage_delivery" class="btn advantages__btn advantages__btn--active">Доставка</label>
-              </div>
-            </li>
-
-
-            <li> 
-             <div class="hero__button-container2">
-              <label for="advantage_warranty" class="btn advantages__btn">Гарантия</label>
-              </div>
-            </li>
-
-            <li> 
-            <div class="hero__button-container2">
-              <label for="advantage_credit" class="btn advantages__btn">Кредит</label>
-              </div>
-            </li>
-          </ul> 
-     
-
-       
-          <ul class="advantages-slider-list list-none">
-            <li class="advantages-slider-item">
-              <section class="slider__slide">
-                <div class="advantages__inner-delivery">
-                </div>
-                <div class="advantages__info info-text">
-                  <h3 class="main-title_advantages">Доставка</h3>
-                    <p class="advantages__para">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
-                    </p>
-                </div>
-              </section>
-            </li> 
-            <li class="advantages-slider-item">
-              <section class="slider__slide">
-                <div class="advantages__inner-warranty">
-                </div>
-                <div class="advantages__info info-text">
-                  <h3 class="main-title_advantages">Гарантия</h3>
-                    <p class="advantages__para">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
-                    </p>
-                </div>  
-              </section>
-            </li>
-            <li class="advantages-slider-item">  
-              <section class="slider__slide">
-                <div class="advantages__inner-credit">
-               	</div>
-                  <div class="advantages__info info-text">
-                    <h3 class="main-title_advantages">Кредит</h3>
-                    <p class="advantages__para">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
-                    </p>
-                  </div>
-              </section>
-            </li>
-          </ul> 
-      
-      </div>   
-    </section>
-
-
+				<input class="visually-hidden delivery" type="radio" name="advantage" id="advantage_delivery" checked>
+				<input class="visually-hidden garanty" type="radio" name="advantage" id="advantage_warranty">
+				<input class="visually-hidden credit" type="radio" name="advantage" id="advantage_credit">
+				<ul class="list advant-1">
+  				<li class="item">
+    				<label class="label  item-delivery" for="advantage_delivery">
+      				<span class="btn2 btn-delivery advantages__btn">Доставка</span>
+    				</label>
+  				</li>
+  				<li class="item">
+    				<label class="label  item-garanty" for="advantage_warranty">
+      				<span class="btn2 btn-garanty advantages__btn">Гарантия</span>
+    				</label>
+  				</li>
+  			<li class="item">
+    			<label class="label  item-credit" for="advantage_credit">
+      			<span class="btn2 btn-credit advantages__btn">Кредит</span>
+    			</label>
+  			</li>
+				</ul>
+    		<div class="advantages__inner-delivery">
+    			<h3 class="main-title_advantages-1">Доставка</h3>
+      		<p class="advantages__para main-text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.
+      		</p>
+    		</div>
+    		<div class="advantages__inner-warranty">
+      		<h3 class="main-title_advantages-2">Гарантия</h3>
+      		<p class="advantages__para main-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+      		</p>
+    		</div>       
+    		<div class="advantages__inner-credit">
+      		<h3 class="main-title_advantages-3">Кредит</h3>
+      		<p class="advantages__para main-text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.
+      		</p>
+    		</div>
+  		</div>   
+		</section>
 
     <section class="main-container">
       <h2 class="visually-hidden">Бренды наших товаров</h2>
       <ul class="partners__list font-none">
-        <li class="partners__item-dji">
-          <a class="partners__link partners__link-dji" href="#">Бренд dji
+        <li>
+          <a href="#">Бренд dji
+          	<div class="partners__item-dji"> 
+          	</div>	
           </a>
         </li>
-        <li class="partners__item-sp">
-          <a class="partners__link partners__link--spgadgets" href="#">Бренд spgadgets
+        <li>
+          <a href="#">Бренд spgadgets
+          	 <div class="partners__item-sp"> 
+          	 </div>
+          </a>         
+        </li>
+        <li>
+        	<a href="#">Бренд gopro
+						<div class="partners__item-gopro"> 
+          	</div>
           </a>
         </li>
-        <li class="partners__item-gopro">
-         	<a class="partners__link partners__link--gopro" href="#">Бренд gopro
-          </a>
-        </li>
-        <li class="partners__item-vive">
-          <a class="partners__link partners__link--vive" href="#">Бренд vive
+        <li>
+          <a href="#">Бренд vive
+          	<div class="partners__item-vive"> 
+          	</div>
           </a>
         </li>
       </ul>
     </section>
 
-    <section class="main-container">
+    <section class="main-container brief-info__flex-it">
       <h2 class="visually-hidden"> Мы и наши партнеры </h2>
-      <div class="main-container brief-info__flex-it">
-        <section class="brief-info__left-column">
-        <h3 class="main-title brief-info__main-title">О нас</h3>
+
+      <div class="brief-info__left-column">
+      	<h3 class="main-title brief-info__main-title">О нас</h3>
         <div class="brief-info__deco-line"> 
       	</div>
         <div class="info-text">
@@ -396,36 +444,34 @@
           class="brief-info__para">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
         </div>
-      
-         <h3 class="visually-hidden">Наши партнеры</h3>
+        <h3 class="visually-hidden">Наши партнеры</h3>
         <ul class="custom-list-white-circles brief-info__list">
-          <li class="custom-list-white-circles-item">
-            Деловые Линии
+         	<li class="custom-list-white-circles-item">
+        		Деловые Линии
           </li>
           <li class="custom-list-white-circles-item">
-            Автотрейдинг
+          	Автотрейдинг
           </li>
           <li class="custom-list-white-circles-item">
-            ЖелДорЭкспедиция
+          	ЖелДорЭкспедиция
           </li>
         </ul>
- 		<div class="brief-info__btn-container">
+ 				<div class="brief-info__btn-container">
         	<a href="#" class="btn">Подробнее о нас</a>
-        </div> 
-        </section>
+      	</div>         
+      </div>
 
-        <section class="brief-info__right-column">
-         	<h3 class="main-title brief-info__main-title decoline--black"> Контакты </h3>
+      <div class="brief-info__right-column">
+        <h3 class="main-title brief-info__main-title decoline--black"> Контакты </h3>
 		  	<div class="brief-info__deco-line"> 
-      		</div>
- 			<p class="brief-info__para info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
-      		</p>
-			<img src="img/cont/map.jpg" alt="Карта" class="map-position">		
-		 	<div class="brief-info__btn-container">
-          		<a href="writeus.html" class="btn btn-toggle-write-us">Напишите нам</a>
-        	</div>
-        </section> 
-      </div>   
+      	</div>
+ 				<p class="brief-info__para info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+      	</p>
+				<img src="img/cont/map.jpg" alt="Карта" class="map-position">		
+		 		<div class="brief-info__btn-container">
+          <a href="writeus.html" class="btn btn-toggle-write-us">Напишите нам</a>
+        </div>
+      </div> 
     </section>
   
   </main>
@@ -574,4 +620,3 @@
   <script src="js/script-min.js"></script> -->
 </body>
 </html>
-
