@@ -101,7 +101,7 @@
   </header>
   <main>
 
-		<section class="main-container">
+		<section class="main-container main-container__sliders">
       <h2 class="visually-hidden">Избранные товары</h2>
       	
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -117,11 +117,11 @@
     		<article class="product-1 heroes__flex-it">
 				<h3 class="visually-hidden"> Селфи-палка </h3>	
           
-          <div class="product__image-column">
+          <div class="product__image-column product__image-1">
 						<img src="img/cont/slide_1.png" alt="Невероятно длинная селфи-палка" width="384" height="486"> 
           </div>
 
-          <div class="product__description-column">
+          <div class="product__description-column-1">
           	<p class="main-title hero__title">
             	Делай селфи,<br> 
             	как Бен Стиллер!
@@ -152,15 +152,16 @@
     		</article>
 
     		<article class="product-2 heroes__flex-it">
-				<h3 class="visually-hidden"> Селфи-палка </h3>	
+				<h3 class="visually-hidden"> Фитнес-браслет </h3>	
           
-          <div class="product__image-column">
+          <div class="product__image-column product__image-2">
 						<img src="img/cont/slide_2.png" alt="Фитнес-браслет" width="345" height="485">
           </div>
 
-          <div class="product__description-column">
+          <div class="product__description-column-2">
           	<p class="main-title hero__title">
-            	Худеем правильно!
+            	Худеем <br>
+            	правильно!
           	</p>
           	<p class="hero_para info-text">
             	Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
@@ -176,11 +177,45 @@
               <dd>48 часов</dd>
             </dl>
           </div>
-          
+
           </div>
     		</article>
 
 
+
+    		<article class="product-3 heroes__flex-it">
+				<h3 class="visually-hidden"> Жалящий квадрокоптер </h3>	
+          
+          <div class="product__image-column product__image-3">
+						<img src="img/cont/slide_3.png" alt="Жалящий квадрокоптер" width="526" height="334">
+          </div>
+
+          <div class="product__description-column-3">
+          	<p class="main-title hero__title">
+            	Порхает как бабочка, <br>
+          		жалит как пчела!
+          	</p>
+          	<p class="hero_para info-text">
+            	Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+          	</p>
+          	<div class="hero__button-container">
+            	<a href="#" class="btn">Подробнее
+            	</a>
+          	</div>
+
+          <div class="hero__facts">
+            <dl class="hero__facts-col">
+              <dt>Дальность полета</dt>
+              <dd>800 м</dd>
+            </dl>
+            <dl class="hero__facts-col"> 
+              <dt>Радиус поражения</dt>
+              <dd>50 м</dd>
+            </dl>
+          </div>
+
+          </div>
+    		</article>
 
     </section>		
 
@@ -497,9 +532,11 @@
       	</div>
  				<p class="brief-info__para info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       	</p>
-				<img src="img/cont/map.jpg" alt="Карта" class="map-position">		
+      	<a>
+				<img src="img/cont/map.jpg" alt="Карта" class="map-position">
+				</a>		
 		 		<div class="brief-info__btn-container">
-          <a href="writeus.html" class="btn btn-toggle-write-us">Напишите нам</a>
+          <a class="btn btn-toggle-write-us">Напишите нам</a>
         </div>
       </div> 
     </section>
@@ -586,20 +623,19 @@
 </div>
   </footer>
   <div class="popup-map hidden">
+  	<a class="form__modal-close" href="#">
+    </a>  
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.482165223512!2d37.52813139297608!3d55.687642925012305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1504602285796"
       width="960" height="565">
     </iframe>
-      Карта
-    <button type="button" class="font-none">
-      Скрыть
-    </button>
+
   </div>
 
-<div class="contact">
-  <div class="form__modal-close">
-  </div>  
-  <form action="post">
+<div class="contact overlay">
+  <a class="form__modal-close" href="#">
+  </a>  
+  <form action="" method="post">
     <fieldset>
     <legend class="visually-hidden">Форма обратной связи</legend>
       <div class="popup-form__field">
@@ -610,15 +646,15 @@
         <div> Ваш e-mail:
         </div>
       </div>  
-
+      
       <div class="popup-form__part">
         <div class="popup-form__input-container">
           <label for="username" class="visually-hidden">Ваше имя:</label>
-          <input type="text" class="custom-input send-text" name="username" id="username" placeholder="Имя Фамилия">
+          <input type="text" class="custom-input send-text" name="username" id="username" placeholder="Имя Фамилия" requied>
         </div>
         <div class="popup-form__input-container">
           <label for="user_email" class="visually-hidden">Ваш e-mail:</label>
-          <input type="email" class="custom-input send-text" name="user_email" id="user_email" placeholder="email@example.com" required>
+          <input type="email" class="custom-input send-text" name="user_email" id="user_email" placeholder="email@example.com" requied>
         </div>
       </div>
 
@@ -632,7 +668,8 @@
         <div class="popup-form__input-container popup-form__input-container--for-textarea">
           <label for="user_mailtext" class="visually-hidden">Текст письма:</label>
           <textarea name="user_mailtext" class="custom-input popup-form__textarea" id="user_mailtext" placeholder="В свободной форме">
-          </textarea>
+					</textarea>
+
         </div>
       </div>
     <div class="popup-form__btn-container">
@@ -647,6 +684,6 @@
     </button>
   </form> 
 </div>
-  <script src="js/script-min.js"></script> -->
+  <script src="js/script-min.js"></script>
 </body>
 </html>
