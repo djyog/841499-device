@@ -14,7 +14,8 @@
       </a>       
     </p>
       <nav class="main-header__nav">
-        <div class="header-container main-text">
+
+        <div class="header-container__catalog main-text">
           <div class="search_block">
             <form action="#" method="get" class="search main-header__column">
               <input type="text" placeholder="Поиск по сайту" id="search_item" name="search" class="search-input">
@@ -22,11 +23,11 @@
             </form>
             <div class="search_ico"></div>
           </div>
-          <div class="right-column">  
+       	  <div class="right-column">  
             <ul class="main-header__user-list list-none">
-              <li class="user-is-logged-in main-header__user-item user-item__user">
-                <a class="icon-link main-header__link user-is-logged-in" href="#">
-                Александр Ковалев
+              <li class="user-is-logged-in main-header__user-item">
+                <a class="icon-link main-header__link user-item__user user-is-logged-in" href="#">
+                Валентин Петухов
                 </a>
               </li>
               <li class="main-header__user-item main-header__user-item--login">
@@ -36,20 +37,20 @@
               </li>
             </ul>   
             <ul class="main-header__user-list-right list-none">
-              <li class="main-header__user-item-compare user-item__compare left-pad">
-                <a class="icon-link main-header__link user-is-logged-out" href="#">
+              <li class="main-header__user-item-compare left-pad">
+                <a class="icon-link main-header__link user-item__compare user-is-logged-out" href="#">
                   Сравнить
                 </a>
               </li>
-              <li class="main-header__user-item user-item__cart left-pad">
-                <a href="#">
+              <li class="main-header__user-item left-pad">
+                <a class="user-item__cart" href="#">
                   Корзина
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="main-header__row">
+        <div class="main-header__row-2">
           <ul class="main-header__main-list main-header__left-column2 list-none">
             <li class="header-catalog__position">
               <a href="#" class="main-header__main-item catalog-opener">
@@ -62,7 +63,7 @@
                       <a href="#">Виртуальная реальность</a>
                     </li>
                     <li class="catalog-list__item">
-                      <a href="catalog.html">
+                      <a href="#">
                         Моноподы для селфи
                       </a>
                     </li>
@@ -95,7 +96,7 @@
               <a href="#" class="main-header__main-item">Гарантия</a>
             </li>
             <li class="about-item">
-              <a href="#" class="main-header__main-item right-position">Контакты</a>
+              <a href="#" class="main-header__main-item">Контакты</a>
             </li>
           </ul>
         </div>
@@ -103,7 +104,7 @@
   </header>
 <main>
   <section class="container_catalog-title">
-    <h1 class="main-title">Моноподы для селфи</h1>
+    <h1 class="main-title__catalog">Моноподы для селфи</h1>
     <div class="container-crumbs info-text">
       <ul class="crumbs__list">
         <li>
@@ -135,7 +136,7 @@
           <section class="sorting">
             <h2 class="secondary-title">Сортировка:</h2>    
             <ul class="sorting__list list-none main-text">
-              <li class="sorting__item--active">
+              <li class="sorting__item-pos">
                 <a class="sorting__item" href="#">По цене</a>
               </li>
               <li>
@@ -165,60 +166,44 @@
   <div class="catalog-background2 catalog-row-2">
     <div class="catalog-center-container">
       <div class="catalog-left-column-2">
-        <form action="#" method="get" class="filter">
-          <h2 class="visually-hidden">Фильтр стоимости:</h2>
-          <fieldset class="filter__field">
-            <legend class="filter__legend filter-title">Стоимость</legend>
-            <div class="filter__range">
-              <button class="filter__round-buttons filter__round-buttons--from" type="button">
-                <span>От 0</span>
-              </button>
-              <button class="filter__round-buttons filter__round-buttons--to" type="button">
-                <span>До 5000</span>
-              </button>
-            </div>
-          </fieldset>
-          <fieldset class="filter__field filter__field--middle">
-            <legend class="filter__legend filter-title">Цвет</legend>
-            <ul class="color__list">
-            <li>
+ 		<section>
+          <h2 class="visually-hidden">Фильтр:</h2>
+          <form action="#" method="get" class="filter">
+            <fieldset class="filter__field">
+              <legend class="filter__legend">Стоимость</legend>
+              <div class="filter__range">
+                <button class="filter__round-buttons filter__round-buttons--from" type="button">
+                  <span>От 0</span>
+                </button>
+                <button class="filter__round-buttons filter__round-buttons--to" type="button">
+                  <span>До 5000</span>
+                </button>
+              </div>
+            </fieldset>
+            <fieldset class="filter__field filter__field--middle">
+              <legend class="filter__legend">Цвет</legend>
               <input type="checkbox" name="color" value="black" id="cb-black" class="filter__input visually-hidden">
-              <label for="cb-black" class="filter__label filter__label--checkbox main-text">Черный</label>
-            </li>
-            <li>
+              <label for="cb-black" class="filter__label filter__label--checkbox">Черный</label>
               <input type="checkbox" name="color" value="white" id="cb-white" class="filter__input visually-hidden">
-              <label for="cb-white" class="filter__label filter__label--checkbox main-text">Белый</label>
-            </li>
-            <li>
+              <label for="cb-white" class="filter__label filter__label--checkbox">Белый</label>
               <input type="checkbox" name="color" value="blue" id="cb-blue" class="filter__input visually-hidden">
-              <label for="cb-blue" class="filter__label filter__label--checkbox main-text">Синий</label>
-            </li>
-            <li>
+              <label for="cb-blue" class="filter__label filter__label--checkbox">Синий</label>
               <input type="checkbox" name="color" value="red" id="cb-red" class="filter__input visually-hidden">
-              <label for="cb-red" class="filter__label filter__label--checkbox main-text">Красный</label>
-            </li>
-            <li>
+              <label for="cb-red" class="filter__label filter__label--checkbox">Красный</label>
               <input type="checkbox" name="color" value="pink" id="cb-pink" class="filter__input visually-hidden">
-              <label for="cb-pink" class="filter__label filter__label--checkbox main-text">Розовый</label>
-            </li>
-            </ul>  
-          </fieldset>
-          <fieldset class="filter__field filter__field--bottom">
-            <legend class="filter__legend filter-title">Bluetooth</legend>
-          <ul class="advantages__btn-container">
-          <li> 
-            <input type="radio" name="bluetooth" value="1" id="bluetooth-1" class="filter__input visually-hidden">
-            <label for="bluetooth-1" class="filter__label filter__label--radio main-text">Есть</label>
-          </li>
-          <li> 
-            <input type="radio" name="bluetooth" value="0" id="bluetooth-0" class="filter__input visually-hidden">
-            <label for="bluetooth-0" class="filter__label filter__label--radio main-text">Нет</label>
-          </li>
-          </ul> 
-          </fieldset>
-          <button type="submit" class="btn">Показать</button>
-        </form>
-      </div>
+              <label for="cb-pink" class="filter__label filter__label--checkbox">Розовый</label>
+            </fieldset>
+            <fieldset class="filter__field filter__field--bottom">
+              <legend class="filter__legend">Bluetooth</legend>
+              <input type="radio" name="bluetooth" value="1" id="bluetooth-1" class="filter__input visually-hidden">
+              <label for="bluetooth-1" class="filter__label filter__label--radio">Есть</label>
+              <input type="radio" name="bluetooth" value="0" id="bluetooth-0" class="filter__input visually-hidden">
+              <label for="bluetooth-0" class="filter__label filter__label--radio">Нет</label>
+            </fieldset>
+            <button type="submit" class="btn">Показать</button>
+          </form>
+        </section> 
+	</div> 
       <div class="catalog-right-column-2">
         <div class="bg-gradient-whitegray">
           <div class="container flexit">
@@ -332,17 +317,19 @@
       </div>
     </div>  
   </main>
-  <footer>
+
+
+ <footer>
     <div class="main-footer">
-      <div class="footer-center"> 
+      <div class="footer__first-row"> 
           <p class="main-title logo font-none">  
             <a href="index.html"> <img src="img/svg/logo-orange.svg" alt="DEVICE"> DEVICE </a>
           </p>
-          <div class="right-column__footer">  
+          <div class="right-column__footer-catalog">  
           <ul class="main-header__user-list list-none">
-              <li class="user-is-logged-in main-header__user-item user-item__user-orange">
-                <a class="icon-link main-header__link info-text-white user-is-logged-in" href="#">
-                Александр Ковалев
+              <li class="user-is-logged-in main-header__user-item">
+                <a class="icon-link main-header__link user-item__user-orange info-text-white user-is-logged-in" href="#">
+                Валентин Петухов
                 </a>
               </li>
               <li class="main-header__user-item main-header__user-item--login">
@@ -352,22 +339,23 @@
               </li>
             </ul>  
             <ul class="main-header__user-list-right list-none">
-              <li class="main-header__user-item-compare user-item__compare-orange left-pad">
-                <a class="icon-link main-header__link info-text-white user-is-logged-out" href="#">
+              <li class="main-header__user-item-compare left-pad">
+                <a class="icon-link main-header__link user-item__compare-orange info-text-white user-is-logged-out" href="#">
                   Сравнить
                 </a>
               </li>
-              <li class="main-header__user-item user-item__cart-orange left-pad">
-                <a class="info-text-white" href="#">
+              <li class="main-header__user-item left-pad">
+                <a class="user-item__cart-orange info-text-white" href="#">
                   Корзина
                 </a>
               </li>
             </ul>
-          </div>       
+          </div>          
       </div>
-      <div class="main-footer__main-menu main-footer__row">
-        <p class="main-footer__column main-footer__column--short info-text-white">г. Москва, ул. Строителей,  15</p>
-        <ul class="main-footer__main-list main-footer__column--medium">
+      <div class="main-footer__row">
+        <p class="main-footer__column-left">г. Москва, ул. Строителей,  15
+        </p>
+        <ul class="main-footer__column-centr footer-list__cerntr">
           <li>
             <a class="main-footer__main-item" href="#">Доставка</a>
           </li>
@@ -378,17 +366,17 @@
             <a class="main-footer__main-item" href="#">Контакты</a>
           </li>
         </ul>
-        <div class="main-footer__column main-footer__column--short">
+        <div class="main-footer__column-right">
           <p class="main-footer__text info-text-white"> Тел.:
             <a class="main-footer__phone" href="tel:+74954959595">+7 (495) 495-95-95</a>
           </p>  
         </div>
       </div>
-      <div class="main-footer__row">
-        <ul class="socials socials--footer main-footer__column main-footer__column--long">
+      <div class="main-footer__row-2">
+        <ul class="socials">
           <li class="socials-item">
             <a href="#" class="socials__link font-none">
-              <img src="img/svg/fb.svg" alt="Фейсбук">  
+              <img src="img/svg/fb.svg" alt="Фейсбук">	
               Фейсбук
             </a>
           </li>
@@ -405,17 +393,16 @@
             </a>
           </li>
         </ul>
-        <div class="decoline-orange"><div>
-        <div class="logo logo-academy font-none">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img/svg/logo-html.svg" alt="HTML Academy">
-            HTML Academy
-          </a>
+        <div class="decoline-orange">
         </div>
-      </div>
-    </div>  
-  </div>
-</div>
+        		<div class="logo logo-academy font-none">
+          		<a href="https://htmlacademy.ru/intensive/htmlcss">
+          			<img src="img/svg/logo-html.svg" alt="HTML Academy">
+            		HTML Academy
+          		</a>
+        		</div>
+      		</div>
+    	</div>  
   </footer>
 </body>
 </html>
