@@ -1318,7 +1318,6 @@ margin-bottom: 51px;
 }
 
  
-
 /** СЛАЙДЕР ПРЕИМУЩЕСТВ НА ГЛАВНОЙ СТРАНИЦЕ **/
 
 .services {
@@ -1835,7 +1834,7 @@ margin-bottom: 51px;
 }
 
 .filter__legend {
-  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Georgia', sans-serif;
   font-size: 18px;
   font-weight: 900;
   line-height: 32px;
@@ -1886,7 +1885,7 @@ margin-bottom: 51px;
 }
 
 .filter__round-buttons span {
-  font-family: 'Gilroy', 'Helvetica', sans-serif;
+  font-family: 'Gilroy', 'Georgia', sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 22px;
@@ -1917,18 +1916,14 @@ margin-bottom: 51px;
 
 .filter__round-buttons:active::before {
   transform: scale(1.1);
-
   outline: none;
 }
 
 .filter__label {
   font-size: 14px;
   line-height: 23px;
-
   position: relative;
-
   display: block;
-
   width: 160px;
   margin-bottom: 7px;
   padding: 5px 0;
@@ -1942,7 +1937,6 @@ margin-bottom: 51px;
 .filter__label::before {
   position: absolute;
   left: 0;
-
   content: '';
 }
 
@@ -1956,7 +1950,6 @@ margin-bottom: 51px;
 .filter__label--checkbox::before {
   width: 27px;
   height: 23px;
-
   background: no-repeat left top;
 }
 
@@ -1974,7 +1967,6 @@ margin-bottom: 51px;
   box-sizing: border-box;
   width: 25px;
   height: 25px;
-
   border: 4px solid #000;
   border-radius: 50%;
 }
@@ -1983,12 +1975,10 @@ margin-bottom: 51px;
   position: absolute;
   top: 50%;
   left: 0;
-
   width: 9px;
   height: 9px;
   margin-top: -4px;
   margin-left: 8px;
-
   border-radius: 50%;
   background: #000;
 }
@@ -2088,7 +2078,6 @@ margin-bottom: 51px;
   opacity: .3;
 }
 
-
 .paginator__item--active a,
 .paginator__item--outer a {
   opacity: 1;
@@ -2126,6 +2115,7 @@ margin-bottom: 51px;
   background: rgba(255,255,255,1);
   margin-top: 30px;
   box-shadow: 0 4px 20px 1px rgba(0,0,0,.2);
+  display: none;
 }
 
 .popup-map {
@@ -2138,9 +2128,8 @@ margin-bottom: 51px;
   background: rgba(255,255,255,0.9);
   margin-top: 30px;
   box-shadow: 0 4px 20px 1px rgba(0,0,0,.2);
+  display: none;
 }
-
-
 
 .popup-form__field
 {
@@ -2150,7 +2139,6 @@ margin-bottom: 51px;
     width: 760px;
     height: 380px;
     padding: 100px 100px 160px 100px;
-
 }
 
 fieldset {
@@ -2292,9 +2280,7 @@ fieldset {
   margin-bottom: 86px;
 }
 
-
 /* ______ Слайдер товаров _________ */
-
 
 .heroes__flex-it {
   display: flex;
@@ -2395,8 +2381,6 @@ fieldset {
  margin-bottom: 18px;
 }
 
-
-
  /** СЛАЙДЕР ПРОДУКТОВ НА ГЛАВНОЙ СТРАНИЦЕ **/
 
   .container-products {
@@ -2493,8 +2477,6 @@ fieldset {
   position: relative;
 }
 
-
-
 input:required {
     background-color: yellow;
     transition: all 0.3s;
@@ -2503,8 +2485,6 @@ input:invalid {
   background-color: #f6dada;
   border-color: #f6dada;
 }
-
-
 
 .overlay {
 position: fixed;
