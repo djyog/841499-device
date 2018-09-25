@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Девайс</title>
-  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/normalize.mini.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
 </head>
 <body>
   <header class="main-header">
+  <div class="wrapper">
     <h1 class="visually-hidden">HTML Academy: Девайс
     </h1>
     <p class="logo logo__headerposition">
-      <a href="#">
-        <img src="img/svg/logo.svg" alt="DEVICE">
+      <a>
+        <img src="img/svg/logo.svg" alt="DEVICE" width="164" height="36">
       </a>       
     </p>
       <nav class="main-header__nav">
@@ -98,32 +99,27 @@
           </ul>
         </div>
       </nav>
+    </div>  
   </header>
   <main>
-
 		<section class="main-container main-container__sliders">
       <h2 class="visually-hidden">Избранные товары</h2>
-      	
-        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
-       	
+        <input class="visually-hidden product-1" type="radio" id="product-1" name="toggle" checked>
+        <input class="visually-hidden product-2" type="radio" id="product-2" name="toggle">
+        <input class="visually-hidden product-3" type="radio" id="product-3" name="toggle">
        	<div class="slider-controls">
 					<label class="label-product-1" for="product-1">Первый</label>
           <label class="label-product-2" for="product-2">Второй</label>
           <label class="label-product-3" for="product-3">Третий</label>
         </div>
-
     		<article class="product-1 heroes__flex-it">
-				<h3 class="visually-hidden"> Селфи-палка </h3>	
-          
+				<h3 class="visually-hidden"> Селфи-палка </h3>	 
           <div class="product__image-column product__image-1">
 						<img src="img/cont/slide_1.png" alt="Невероятно длинная селфи-палка" width="384" height="486"> 
           </div>
-
           <div class="product__description-column-1">
           	<p class="main-title hero__title">
-            	Делай селфи,<br> 
+            	Делай селфи, <br>
             	как Бен Стиллер!
           	</p>
           	<p class="hero_para info-text">
@@ -133,7 +129,6 @@
             	<a href="#" class="btn">Подробнее
             	</a>
           	</div>
-
 						<div class="hero__facts">          
             	<dl class="hero__facts-col">
               	<dt>Длина палки</dt>
@@ -150,14 +145,11 @@
           	</div>
           </div>
     		</article>
-
     		<article class="product-2 heroes__flex-it">
-				<h3 class="visually-hidden"> Фитнес-браслет </h3>	
-          
+				<h3 class="visually-hidden"> Фитнес-браслет </h3>	 
           <div class="product__image-column product__image-2">
 						<img src="img/cont/slide_2.png" alt="Фитнес-браслет" width="345" height="485">
           </div>
-
           <div class="product__description-column-2">
           	<p class="main-title hero__title">
             	Худеем <br>
@@ -170,29 +162,22 @@
             	<a href="#" class="btn">Подробнее
             	</a>
           	</div>
-
 					<div class="hero__facts">
             <dl class="hero__facts-col">
               <dt>Без подзарядки</dt>              
               <dd>48 часов</dd>
             </dl>
           </div>
-
           </div>
     		</article>
-
-
-
     		<article class="product-3 heroes__flex-it">
 				<h3 class="visually-hidden"> Жалящий квадрокоптер </h3>	
-          
           <div class="product__image-column product__image-3">
 						<img src="img/cont/slide_3.png" alt="Жалящий квадрокоптер" width="526" height="334">
           </div>
-
           <div class="product__description-column-3">
           	<p class="main-title hero__title">
-            	Порхает как бабочка, <br>
+            	Порхает как бабочка,
           		жалит как пчела!
           	</p>
           	<p class="hero_para info-text">
@@ -202,7 +187,6 @@
             	<a href="#" class="btn">Подробнее
             	</a>
           	</div>
-
           <div class="hero__facts">
             <dl class="hero__facts-col">
               <dt>Дальность полета</dt>
@@ -213,14 +197,9 @@
               <dd>50 м</dd>
             </dl>
           </div>
-
           </div>
     		</article>
-
     </section>		
-
-
-    
     <section class="main-container">
       <h2 class="visually-hidden">Категории устройств</h2>
       <div class="device-column">
@@ -236,7 +215,7 @@
             <a href="catalog.html" class="device-types__link">
               <div class="device-2">
               </div> 
-              <p class="devicetypes-para">Моноподы <br> для селфи</p>
+              <p class="devicetypes-para-2">Моноподы для селфи</p>
             </a>
           </li>
           <li class="list-none__device"> 
@@ -270,7 +249,6 @@
         </ul>
       </div>
     </section>
-
     <section class="services">
       <h2 class="visually-hidden">Сервисы</h2>
       <div class="main-container services__flex-it">
@@ -304,7 +282,7 @@
     		</div>
     		<div class="advantages__inner-warranty">
       		<h3 class="main-title_advantages-2">Гарантия</h3>
-      		<p class="advantages__para main-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.
+      		<p class="advantages__para main-text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.
       		</p>
     		</div>       
     		<div class="advantages__inner-credit">
@@ -314,7 +292,6 @@
     		</div>
   		</div>   
 		</section>
-
     <section class="main-container">
       <h2 class="visually-hidden">Бренды наших товаров</h2>
       <ul class="partners__list font-none">
@@ -344,23 +321,22 @@
         </li>
       </ul>
     </section>
-
-    <section class="main-container brief-info__flex-it">
+    <section class="main-container short-info__flex-it">
       <h2 class="visually-hidden"> Мы и наши партнеры </h2>
 
-      <div class="brief-info__left-column">
-      	<h3 class="main-title brief-info__main-title">О нас</h3>
-        <div class="brief-info__deco-line"> 
+      <div class="short-info__left-column">
+      	<h3 class="main-title short-info__main-title">О нас</h3>
+        <div class="short-info__deco-line"> 
       	</div>
         <div class="info-text">
-          <p class="brief-info__para">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+          <p class="short-info__para">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
           </p>
           <p
-          class="brief-info__para">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
+          class="short-info__para-2">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:
           </p>
         </div>
         <h3 class="visually-hidden">Наши партнеры</h3>
-        <ul class="custom-list-white-circles brief-info__list">
+        <ul class="custom-list-white-circles short-info__list">
          	<li class="custom-list-white-circles-item">
         		Деловые Линии
           </li>
@@ -371,35 +347,33 @@
           	ЖелДорЭкспедиция
           </li>
         </ul>
- 				<div class="brief-info__btn-container">
+ 				<div class="short-info__btn-container">
         	<a href="#" class="btn">Подробнее о нас</a>
       	</div>         
       </div>
-
-      <div class="brief-info__right-column">
-        <h3 class="main-title brief-info__main-title decoline--black"> Контакты </h3>
-		  	<div class="brief-info__deco-line"> 
+      <div class="short-info__right-column">
+        <h3 class="main-title short-info__main-title decoline--black"> Контакты </h3>
+		  	<div class="short-info__deco-line"> 
       	</div>
- 				<p class="brief-info__para info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
+ 				<p class="short-info__para info-text">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.
       	</p>
       	<a>
-				<img src="img/cont/map.jpg" alt="Карта" class="map-position">
+				<img src="img/cont/map.jpg" alt="Карта" class="map-position" width="560" height="222">
 				</a>		
-		 		<div class="brief-info__btn-container">
+		 		<div class="short-info__btn-container">
           <a href="writeus.html" class="btn btn-toggle-write-us">Напишите нам</a>
         </div>
       </div> 
     </section>
   </main>
-
   <footer>
     <div class="main-footer">
       <div class="footer__first-row"> 
-          <p class="main-title logo font-none">  
-            <a href="#"> <img src="img/svg/logo-orange.svg" alt="DEVICE"> DEVICE </a>
+          <p class="main-title logo font-none footer-logo">  
+            <a href="#"> <img src="img/svg/logo-orange.svg" alt="DEVICE" width="164" height="36"> DEVICE </a>
           </p>
           <div class="right-column__footer">  
-            <ul class="footer__user-list list-none">
+            <ul class="footer__user-list list-none footer__user-list-login">
               <li class="main-header__user-item">
                 <a class="icon-link main-footer__link user-is-logged-out user-item__user-orange info-text-white" href="#">
                   Войти
@@ -423,7 +397,7 @@
       <div class="main-footer__row">
         <p class="main-footer__column-left">г. Москва, ул. Строителей,  15
         </p>
-        <ul class="main-footer__column-centr footer-list__cerntr">
+        <ul class="main-footer__column-centr footer-list__centr">
           <li>
             <a class="main-footer__main-item" href="#">Доставка</a>
           </li>
@@ -444,19 +418,19 @@
         <ul class="socials">
           <li class="socials-item">
             <a href="#" class="socials__link font-none">
-              <img src="img/svg/fb.svg" alt="Фейсбук">	
+              <img src="img/svg/fb.svg" alt="Фейсбук" width="32" height="32">	
               Фейсбук
             </a>
           </li>
           <li class="socials-item">
             <a href="#" class="socials__link font-none">
-              <img src="img/svg/instagram.svg" alt="Инстаграм">
+              <img src="img/svg/instagram.svg" alt="Инстаграм" width="32" height="32">
               Инстаграм
             </a>
           </li>
           <li class="socials-item">
             <a href="#" class="socials__link font-none">
-              <img src="img/svg/twitter.svg" alt="Твиттер">
+              <img src="img/svg/twitter.svg" alt="Твиттер" width="32" height="32">
               Твиттер
             </a>
           </li>
@@ -465,7 +439,7 @@
         </div>
         		<div class="logo logo-academy font-none">
           		<a href="https://htmlacademy.ru/intensive/htmlcss">
-          			<img src="img/svg/logo-html.svg" alt="HTML Academy">
+          			<img src="img/svg/logo-html.svg" alt="HTML Academy" width="26.943" height="34.09">
             		HTML Academy
           		</a>
         		</div>
@@ -524,8 +498,6 @@
     	</button>
   	</form> 
 	</div>
-
   <script src="js/script-min.js"></script>
-
 </body>
 </html>
