@@ -13,12 +13,13 @@ if(popupForm){
   });
 }
 
-var openingMap=document.querySelector(".brief-info__overlay");
+var openingMap=document.querySelector(".map__link");
 var closingButtonMap=document.querySelector(".modal-close-btn--map");
 var popupMap=document.querySelector(".popup-map");
 
 if(popupMap){
   openingMap.addEventListener("click",function(){
+    event.preventDefault();
     popupMap.classList.toggle("hidden")
   });
 
