@@ -2081,6 +2081,8 @@ a:focus + .sub-menu { display: block;}
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 350px;
   padding-left: 25px;
   padding-top: 3px;
@@ -2639,8 +2641,8 @@ a:focus + .sub-menu { display: block;}
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left:  1039px;
-  top: 332px;
+  right: 43px;
+  bottom: 167px;
   z-index: 100;
   width: 78px;
   text-align: center;
